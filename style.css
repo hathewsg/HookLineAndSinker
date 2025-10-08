@@ -1,5 +1,5 @@
 .background{
-    background-image: ulr('site_images/main_bg.png');
+    background-image: url('site_images/main_bg.png');
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
