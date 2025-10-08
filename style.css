@@ -1,6 +1,8 @@
 .background{
     background-image: url('site_images/main_bg.png');
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
     background-position: center;
+
+    height: 100rem;
 }
