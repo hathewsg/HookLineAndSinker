@@ -7,6 +7,30 @@
     height: 100rem;
 }
 
+.header {
+    background-color: #ffffff;
+    overflow: hidden;
+    text-align: right;
+    padding: 10px 0;
+
+    a {
+        padding: 10px;
+    }
+}
+
+.footer {
+    background-color: #ffffff;
+    overflow: hidden;
+    text-align: right;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    a {
+        padding: 10px;
+    }
+}
+
 .app-list{
     max-width: 600px;
     margin: 20px auto;
