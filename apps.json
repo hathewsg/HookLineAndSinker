@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Tinder",
+        "description": "An app for finding people to go on dates with.",
+        "rating": 4.5
+    },
+    {
+        "name": "Bumble",
+        "description": "An app for finding bees to go on dates with.",
+        "rating": 4.8
+    },
+    {
+        "name": "Timbers",
+        "description": "An app for finding pirates to go on dates with.",
+        "rating": 2.8
+    }
+]

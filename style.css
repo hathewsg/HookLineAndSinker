@@ -6,3 +6,19 @@
 
     height: 100rem;
 }
+
+.app-list{
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.app-card{
+    background: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+.app-card h2 {
+    margin: 0 0 5px;
+}

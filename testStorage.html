@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Test Page</title>
+    <script>
+        // Loading the JSON file after the webpage loads
+        window.addEventListener("DOMContentLoaded", () => {
+            fetch("apps.json")
+                .then(response => {
+                    // Throws error if json file not found
+                    if (!response.ok) {
+                        throw new Error("Failed to load apps.json");
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    // Whatever parent element the apps will be loaded into
+                    const container = document.getElementById("app-list");
+
+                    // Loops through every app in "apps.json"
+                    data.forEach(app => {
+                        const div = document.createElement("div");
+                        div.className = "app-card";
+                        div.innerHTML = `
+                            <h2>${app.name}</h2>
+                            <h4>Rating: ${app.rating}</h4>
+                            <p>${app.description}</p>
+                        `;
+
+                        container.appendChild(div);
+                    })
+                })
+
+                // If an error is thrown, it will be printed to the console here
+                .catch(error => console.error("Error loading data: ", error));
+        })
+    </script>
+</head>
+<body class="background">
+    <div style="text-align: center;">
+        <h1>A list of all apps!</h1>
+        <div id="app-list" class="app-list">
+            <!-- Content will be loaded by the script here -->
+        </div>
+    </div>
+</body>
+</html>
