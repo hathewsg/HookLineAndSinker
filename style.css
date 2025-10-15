@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
     font-family: "Golos Text", sans-serif;
 }
 
@@ -9,6 +9,35 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+form {
+  display: flex;
+  gap: 10px; 
+  align-items: center;
+}
+
+input[type="text"] {
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex: 1; 
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 1rem;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
 
 .background {
     /* background-image: url('site_images/main_bg.png');
@@ -22,7 +51,7 @@ a {
 }
 
 .header {
-    background: linear-gradient(to right, #FEE7FD, #FCBAF9);
+    background-color: #FCBAF9;
     box-shadow: 0 8px 20px 2px rgba(0, 0, 0, 0.3);
 
     overflow: hidden;
@@ -31,7 +60,7 @@ a {
     justify-content: space-between;
     padding: 10px 10px;
     height: 100px;
-    width: 100%;
+    max-width: 100%;
 }
 
 .header .title {
@@ -39,6 +68,7 @@ a {
     font-family: "Pacifico", cursive;
     font-weight: 400;
     font-style: normal;
+    color: #660F3B;
 }
 
 .header a {
@@ -69,8 +99,13 @@ a {
 
 }
 
+.nav-links img {
+    max-width: 30px;
+    max-height: 30px;
+}
+
 .footer {
-    background: linear-gradient(to right, #FEE7FD, #FCBAF9);
+    background-color: #FCBAF9;
     box-shadow: 0 8px 20px 2px rgba(0, 0, 0, 0.3);
     overflow: hidden;
     display: flex;
@@ -78,7 +113,7 @@ a {
     justify-content: flex-end;
     padding: 10px 10px;
     height: 100px;
-    width: 100%;
+    max-width: 100%;
 }
 
 .footer a {
@@ -123,6 +158,8 @@ a {
     display: flex;
     flex-direction: row;
     padding: 10px;
+    max-width: 1000px;
+    align-self: center;
 }
 
 .top-inner {
@@ -132,19 +169,141 @@ a {
     align-items: center;
     background-color: #968A9090;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 5%;
+    border-radius: 3%;
     flex: 1;
     padding: 10px;
     margin: 10px;
 }
 
 .top-inner p {
+    line-height: 2;
     text-align: center;
     padding-left: 20px;
-    padding-right: 20px
+    padding-right: 20px;
+}
+
+.top-inner ul {
+    line-height: 2;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.app-rows {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    align-self: center;
+    padding: 10px;
+    max-width: 1300px;
+}
+
+.top-rated {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 10px;
+    gap: 85px;
+    margin-bottom: 20px;
+}
+
+.fun-apps {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 10px;
+    gap: 85px;
+    margin-bottom: 20px;
+}
+
+.app-container {
+    background-color: #968A9090;
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px;
+    padding: 20px;
 }
 
 
+.about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #968A9090;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 3%;
+    align-self: center;
+    padding: 20px;
+    margin: 20px;
+    max-width: 1000px;
+
+}
+
+.about-section .team-members {
+    padding-left: 20px;
+    line-height: 2;
+}
+
+.about-section h2 {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.about-section p {
+    line-height: 2;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.request-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    background-color: #968A9090;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 3%;
+    padding: 20px;
+    margin: 20px;
+    max-width: 1000px;
+}
+
+.request-form h2 {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.request-form p {
+    line-height: 2;
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.request-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 500px;
+}
 
 .app-list {
     max-width: 600px;
