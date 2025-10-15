@@ -100,8 +100,8 @@ button:hover {
 }
 
 .nav-links img {
-    max-width: 30px;
-    max-height: 30px;
+    max-width: 20px;
+    max-height: 20px;
 }
 
 .footer {
@@ -222,6 +222,7 @@ button:hover {
 
 .app-container {
     background-color: #968A9090;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 3%;
     display: flex;
     flex-direction: column;
