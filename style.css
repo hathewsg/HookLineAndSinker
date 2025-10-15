@@ -111,10 +111,6 @@ a {
 
 }
 
-.whole-page {
-
-}
-
 .main-section {
     display: flex;
     flex-direction: column;
@@ -130,9 +126,12 @@ a {
 }
 
 .top-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #968A9090;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 10%;
+    border-radius: 5%;
     flex: 1;
     padding: 10px;
     margin: 10px;
@@ -140,6 +139,8 @@ a {
 
 .top-inner p {
     text-align: center;
+    padding-left: 20px;
+    padding-right: 20px
 }
 
 
