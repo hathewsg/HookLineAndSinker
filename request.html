@@ -41,13 +41,15 @@
                     <div class="inputs">
                         <input type="text" name="app-name-input" placeholder="App Name" required>
                         <input type="text" name="app-desc-input" placeholder="App Description" required>
+                        <input type="text" name="app-rating-input" placeholder="App Rating" required>
                         <button type="submit">Submit</button>
                     </div>
-
                 </form>
-
-
-
+            </div>
+            <div class="request-form" id="submitted">
+                <h2 id="app-name"></h2>
+                <h2 id="app-desc"></h2>
+                <h2 id="app-rating"></h2>
             </div>
         </div>
         <div class="footer">
@@ -57,4 +59,13 @@
             </div>
         </div>
     </div>
+    <script type="module">
+        import { FormHandler } from './scripts/formHandler.js';
+
+        const formHandler = new FormHandler("form", {
+            name: "app-name",
+            desc: "app-desc",
+            rating: "app-rating"
+        });
+    </script>
 </body>
