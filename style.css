@@ -167,7 +167,7 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #968A9090;
+    background-color: #ffffff90;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 3%;
     flex: 1;
@@ -207,6 +207,20 @@ button:hover {
     padding: 10px;
     gap: 85px;
     margin-bottom: 20px;
+    
+}
+
+.top-rated button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    color: #000000;
+}
+
+.top-rated button:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
 
 .fun-apps {
@@ -221,7 +235,7 @@ button:hover {
 }
 
 .app-container {
-    background-color: #968A9090;
+    background-color: #ffffff90;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 3%;
     display: flex;
@@ -236,7 +250,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #968A9090;
+    background-color: #ffffff90;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 3%;
     align-self: center;
@@ -252,6 +266,7 @@ button:hover {
 }
 
 .about-section h2 {
+    font-family: 'pacifico', cursive;
     padding-right: 20px;
     padding-left: 20px;
 }
@@ -267,7 +282,7 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-self: center;
-    background-color: #968A9090;
+    background-color: #ffffff90;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 3%;
     padding: 20px;
