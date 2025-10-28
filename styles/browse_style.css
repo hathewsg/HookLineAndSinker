@@ -1,0 +1,29 @@
+/*
+    Styling for browse page and each individual app card
+*/
+
+.app-list {
+    margin: 20px auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3em;
+}
+.error {
+    grid-column: 1 / -1;
+    color: red;
+    font-size: 2em;
+}
+
+.app-card {
+    background: white;
+    max-width: 300px;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.app-card img{
+    max-width:100px;
+    border-radius: 1.3rem;
+}

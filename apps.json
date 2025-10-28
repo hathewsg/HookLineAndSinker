@@ -1,17 +1,39 @@
 [
     {
         "name": "Tinder",
-        "description": "An app for finding people to go on dates with.",
+        "app-type": "Dating App",
+        "subscription": 29.99,
+        "users": 75000000,
+        "release-date": "September 12, 2012",
+        "owner": "Match Group",
+        "homepage": "https://mtch.com",
+        "image-name": "tinder.jpg",
+        "description": "An app where people match with each other based off if they both liked each other's profiles.",
         "rating": 4.5
     },
     {
         "name": "Bumble",
-        "description": "An app for finding bees to go on dates with.",
-        "rating": 4.8
+        "app-type": "Dating App",
+        "subscription": 39.99,
+        "users": 50000000,
+        "release-date": "December,2014",
+        "owner": "Bumble Incorporated",
+        "homepage": "https://bumble.com",
+        "image-name": "bumble.png",
+        "description": "An dating app where a woman must first contact a man in order for a match to occur.",
+        "rating": 4.5
     },
     {
-        "name": "Timbers",
-        "description": "An app for finding pirates to go on dates with.",
-        "rating": 2.8
+        "name": "Hinge",
+        "app-type": "Dating App",
+        "subscription": 49.99,
+        "users": 30000000,
+        "release-date": "February, 2013",
+        "owner": "Match Group",
+        "homepage": "https://mtch.com",
+        "image-name": "hinge.png",
+        "description": "An dating app similar to Tinder, but that prioritizes finding permanent relationships.",
+        "rating": 4.5
     }
+    
 ]
