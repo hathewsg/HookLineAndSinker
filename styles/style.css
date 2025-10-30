@@ -262,41 +262,6 @@ button:hover {
     padding-left: 20px;
 }
 
-.request-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
-    background-color: #968A9090;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 3%;
-    padding: 20px;
-    margin: 20px;
-    max-width: 1000px;
-}
-
-.request-form h2 {
-    padding-right: 20px;
-    padding-left: 20px;
-}
-
-.request-form p {
-    line-height: 2;
-    text-align: center;
-    padding-right: 20px;
-    padding-left: 20px;
-}
-
-.request-form form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
-    align-items: center;
-    gap: 15px;
-    padding: 20px;
-}
-
 .inputs {
     display: flex;
     flex-direction: column;

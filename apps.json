@@ -7,21 +7,17 @@
         "release-date": "September 12, 2012",
         "owner": "Match Group",
         "homepage": "https://mtch.com",
-        "image-name": "tinder.jpg",
-        "description": "An app where people match with each other based off if they both liked each other's profiles.",
-        "rating": 4.5
+        "image-name": "tinder.jpg"
     },
     {
         "name": "Bumble",
         "app-type": "Dating App",
         "subscription": 39.99,
         "users": 50000000,
-        "release-date": "December,2014",
+        "release-date": "December, 2014",
         "owner": "Bumble Incorporated",
         "homepage": "https://bumble.com",
-        "image-name": "bumble.png",
-        "description": "An dating app where a woman must first contact a man in order for a match to occur.",
-        "rating": 4.5
+        "image-name": "bumble.png"
     },
     {
         "name": "Hinge",
@@ -31,9 +27,366 @@
         "release-date": "February, 2013",
         "owner": "Match Group",
         "homepage": "https://mtch.com",
-        "image-name": "hinge.png",
-        "description": "An dating app similar to Tinder, but that prioritizes finding permanent relationships.",
-        "rating": 4.5
+        "image-name": "hinge.png"
+    },
+    {
+        "name": "Grindr",
+        "app-type": "Dating App",
+        "subscription": 20.00,
+        "users": 13500000,
+        "release-date": "March 25, 2009",
+        "owner": "Sam Vicente Acquisition Partners",
+        "homepage": "https://www.grindr.com",
+        "image-name": "grindr.jpg"
+    },
+    {
+        "name": "Badoo",
+        "app-type": "Dating App",
+        "subscription": 36.00,
+        "users": 350000000,
+        "release-date": "April, 2006",
+        "owner": "Bumble Incorporated",
+        "homepage": "https://www.bumble.com",
+        "image-name": "badoo.jpg"
+    },
+    {
+        "name": "FarmersOnly",
+        "app-type": "Dating App",
+        "subscription": 4.95,
+        "users": 4500000,
+        "release-date": "June, 2005",
+        "owner": "FarmersOnly Media Incorporated",
+        "homepage": "https://famersonly.com",
+        "image-name": "farmersOnly.png"
+    },
+    {
+        "name": "Duet",
+        "app-type": "Dating App",
+        "subscription": 24.99,
+        "users": 1477000,
+        "release-date": "June 2, 2023",
+        "owner": "Wink Tech",
+        "homepage": "https://www.duetapp.net",
+        "image-name": "duet.png"
+    },
+    {
+        "name": "Hilly",
+        "app-type": "Dating App",
+        "subscription": 29.99,
+        "users": 5000000,
+        "release-date": "August 14, 2017",
+        "owner": "Alex Pasykov",
+        "homepage": "https://www.hily.com",
+        "image-name": "hily.jpg"
+    },
+    {
+        "name": "OkCupid",
+        "app-type": "Dating App",
+        "subscription": 50.00,
+        "users": 50000000,
+        "release-date": "January 19, 2004",
+        "owner": "Match Group",
+        "homepage": "https://www.mtch.com",
+        "image-name": "okCupid.png"
+    },
+    {
+        "name": "Paired",
+        "app-type": "Relationship App",
+        "subscription": 12.99,
+        "users": 250000,
+        "release-date": "September 17, 2020",
+        "owner": "Better Half Limited",
+        "homepage": "https://www.paired.com",
+        "image-name": "paired.png"
+    },
+    {
+        "name": "Waffle",
+        "app-type": "Relationship App",
+        "subscription": 59.99,
+        "users": 400000,
+        "release-date": "July 22, 2020",
+        "owner": "Poppy AI Incorporated",
+        "homepage": "https://www.wafflejournal.com/about",
+        "image-name": "waffle.png"
+    },
+    {
+        "name": "Couple Joy",
+        "app-type": "Relationship App",
+        "subscription": 29.99,
+        "users": 350000,
+        "release-date": "June 3, 2025",
+        "owner": "Heartbit S.R.L",
+        "homepage": "https://www.couplejoyapp.com",
+        "image-name": "coupleJoy.png"
+    },
+    {
+        "name": "Lasting",
+        "app-type": "Relationship App",
+        "subscription": 29.99,
+        "users": 3000000,
+        "release-date": "May 4, 2017",
+        "owner": "Talkspace",
+        "homepage": "https://www.talkspace.com",
+        "image-name": "lasting.png"
+    },
+    {
+        "name": "Agape",
+        "app-type": "Relationship App",
+        "subscription": 19.99,
+        "users": 2000000,
+        "release-date": "April 2023",
+        "owner": "Notion",
+        "homepage": "https://agapewellness.notion.site/About-Us-dd3aaa59c7c64bf0afb06da42691d98c",
+        "image-name": "agape.png"
+    },
+    {
+        "name": "CoupleGrow",
+        "app-type": "Relationship App",
+        "subscription": 59.99,
+        "users": 216000,
+        "release-date": "November 8, 2023",
+        "owner": "Luffian Labs",
+        "homepage": "https://www.lufianlabs.com",
+        "image-name": "coupleGrow.jpg"
+    },
+    {
+        "name": "Couples",
+        "app-type": "Relationship App",
+        "subscription": 0.00,
+        "users": 100000,
+        "release-date": "February 2, 2013",
+        "owner": "Life360",
+        "homepage": "https://www.life360.com",
+        "image-name": "couples.png"
+    },
+    {
+        "name": "Between",
+        "app-type": "Relationship App",
+        "subscription": 2.99,
+        "users": 35000000,
+        "release-date": "March 7, 2012",
+        "owner": "DLT Partners Incorporated",
+        "homepage": "https://between.us/partnership",
+        "image-name": "between.webp"
+    },
+    {
+        "name": "SumOne",
+        "app-type": "Relationship App",
+        "subscription": 6.99,
+        "users": 6000000,
+        "release-date": "October, 2021",
+        "owner": "SandFox",
+        "homepage": "https://www.sumone.co/en",
+        "image-name": "sumone.webp"
+    },
+    {
+        "name": "Coral",
+        "app-type": "Relationship App",
+        "subscription": 9.99,
+        "users": 1000000,
+        "release-date": "July 6, 2024",
+        "owner": "Athais Incorporated",
+        "homepage": "https://www.athais.com",
+        "image-name": "coral.webp"
+    },
+    {
+        "name": "Happn",
+        "app-type": "Dating App",
+        "subscription": 24.99,
+        "users": 50000000,
+        "release-date": "February, 2014",
+        "owner": "Happn SAS",
+        "homepage": "https://www.happn.com",
+        "image-name": "happn.png"
+    },
+    {
+        "name": "Down",
+        "app-type": "Dating App",
+        "subscription": 27.36,
+        "users": 16000000,
+        "release-date": "January 23, 2013",
+        "owner": "Down App Incorporated",
+        "homepage": "https://www.downapp.com",
+        "image-name": "down.jpg"
+    },
+    {
+        "name": "Jaumo",
+        "app-type": "Dating App",
+        "subscription": 15.99,
+        "users": 10000000,
+        "release-date": "April 11, 2012",
+        "owner": "Joyride GmbH",
+        "homepage": "https://www.jaumo.com/en",
+        "image-name": "jaumo.webp"
+    },
+    {
+        "name": "Hud",
+        "app-type": "Dating App",
+        "subscription": 29.99,
+        "users": 7500000,
+        "release-date": "October, 2025",
+        "owner": "Hud Studio Limited",
+        "homepage": "https://www.hudapp.com",
+        "image-name": "hud.png"
+    },
+    {
+        "name": "Lovoo",
+        "app-type": "Dating App",
+        "subscription": 24.99,
+        "users": 15000000,
+        "release-date": "June 5, 2012",
+        "owner": "PE Digital GmbH",
+        "homepage": "https://www.lovoo.com",
+        "image-name": "lovoo.png"
+    },
+    {
+        "name": "Wild",
+        "app-type": "Dating App",
+        "subscription": 24.99,
+        "users": 400000,
+        "release-date": "March 9, 2016",
+        "owner": "Wild Limited",
+        "homepage": "https://justbewild.com",
+        "image-name": "wild.png"
+    },
+    {
+        "name": "The League",
+        "app-type": "Dating App",
+        "subscription": 2499.99,
+        "users": 2600000,
+        "release-date": "January 17, 2015",
+        "owner": "Match Group",
+        "homepage": "https://www.theleague.com",
+        "image-name": "theLeague.png"
+    },
+    {
+        "name": "Eharmony",
+        "app-type": "Dating App",
+        "subscription": 73.99,
+        "users": 45000000,
+        "release-date": "August 22, 2000",
+        "owner": "ParshipMeet Group",
+        "homepage": "https://www.eharmony.com",
+        "image-name": "eharmony.png"
+    },
+    {
+        "name": "Her",
+        "app-type": "Dating App",
+        "subscription": 31.99,
+        "users": 15000000,
+        "release-date": "September, 2013",
+        "owner": "Dattch Limited",
+        "homepage": "https://www.weareher.com",
+        "image-name": "her.png"
+    },
+    {
+        "name": "Raya",
+        "app-type": "Dating App",
+        "subscription": 49.99,
+        "users": 2500000,
+        "release-date": "March, 2015",
+        "owner": "Raya App Incorporated",
+        "homepage": "https://www.rayatheapp.com",
+        "image-name": "raya.png"
+    },
+    {
+        "name": "My Love",
+        "app-type": "Relationship App",
+        "subscription": 1.99,
+        "users": 45000,
+        "release-date": "October 17, 2023",
+        "owner": "Bjorn Bartels",
+        "homepage": "https://www.bjoernbartels.com",
+        "image-name": "myLove.png"
+    },
+    {
+        "name": "Relationship Tracker",
+        "app-type": "Relationship App",
+        "subscription": 0.99,
+        "users": 333000,
+        "release-date": "March 15, 2023",
+        "owner": "Zaffles",
+        "homepage": "https://relationship-tracker-ios.web.app",
+        "image-name": "relationshipTracker.png"
+    },
+    {
+        "name": "Love Counter",
+        "app-type": "Relationship App",
+        "subscription": 8.99,
+        "users": 10000000,
+        "release-date": "July 18, 2017",
+        "owner": "Zipo Apps Limited",
+        "homepage": "https://lovecounter.pp.ua/first-start",
+        "image-name": "loveCounter.png"
+    },
+    {
+        "name": "Cozy Couples",
+        "app-type": "Relationship App",
+        "subscription": 39.99,
+        "users": 70000,
+        "release-date": "September 18, 2024",
+        "owner": "Gain Clarity Applications",
+        "homepage": "https://cozycouples.co",
+        "image-name": "cozyCouples.png"
+    },
+    {
+        "name": "In Love",
+        "app-type": "Relationship App",
+        "subscription": 9.99,
+        "users": 364000,
+        "release-date": "January 26, 2021",
+        "owner": "Dat Hoang",
+        "homepage": "https://www.facebook.com/inlove.mobileapp",
+        "image-name": "inLove.png"
+    },
+    {
+        "name": "Been Together",
+        "app-type": "Relationship App",
+        "subscription": 0.00,
+        "users": 10000000,
+        "release-date": "January 6, 2016",
+        "owner": "Dat Hoang",
+        "homepage": "https://www.facebook.com/inlove.mobileapp",
+        "image-name": "beenTogether.webp"
+    },
+    {
+        "name": "Mia Love",
+        "app-type": "Relationship App",
+        "subscription": 70.99,
+        "users": 96000,
+        "release-date": "February 2, 2014",
+        "owner": "Organic Code Company",
+        "homepage": "https://appadvice.com/app/mialove-relationship-tracker/6477882426",
+        "image-name": "miaLove.jpg"
+    },
+    {
+        "name": "Evergreen",
+        "app-type": "Relationship App",
+        "subscription": 49.99,
+        "users": 100000,
+        "release-date": "January 12, 2023",
+        "owner": "Evergreen Technologies",
+        "homepage": "https://www.evergreenapp.co",
+        "image-name": "evergreen.webp"
+    },
+    {
+        "name": "Loo Van Eck",
+        "app-type": "Relationship App",
+        "subscription": 0.00,
+        "users": 5000,
+        "release-date": "November 19, 2014",
+        "owner": "Loo Van Eck",
+        "homepage": "https://lve.nl",
+        "image-name": "loo.png"
+    },
+    {
+        "name": "Rosebud",
+        "app-type": "Relationship App",
+        "subscription": 12.99,
+        "users": 100000,
+        "release-date": "August 6, 2024",
+        "owner": "Just Imagine Incorporated",
+        "homepage": "https://www.rosebud.app",
+        "image-name": "rosebud.webp"
     }
-    
 ]

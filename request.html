@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/form_style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
@@ -36,35 +37,13 @@
                     Want another application to be added to our catalogue?  Please fill out the form
                     belown and we'll take care of the rest!
                 </p>
-
-                <form>
-                    <div class="inputs">
-                        <label for="name">App Name: </label>
-                        <input type="text" name="name" placeholder="App Name" required>
-                        <input type="text" name="app-type" placeholder="App Type" required>
-                        <input type="number" step="0.01" name="subscription" placeholder="Subscription Price" required>
-                        <input type="number" name="users" placeholder="User Count" required>
-                        <input type="text" name="release-date" placeholder="Release Date" required>
-                        <input type="text" name="owner" placeholder="Owner" required>
-                        <input type="url" name="homepage" placeholder="Homepage URL" required>
-                        <input type="text" name="image-name" placeholder="Image File Name" required>
-                        <input type="text" name="description" placeholder="Description" required>
-                        <input type="number" step="0.1" name="rating" placeholder="Rating" required>
-                        <button type="submit">Submit</button>
-                    </div>
+                <form action="https://formspree.io/f/xdkplgpv" method="POST" id="request">
+                    <input type="text" name="name" placeholder="App Name" required>
+                    <input type="text" name="firstAndLast" placeholder="First and Last Name" required>
+                    <input type="text" name="email" placeholder="Your Email" required>
+                    <textarea name="comments" rows="4" cols="50" placeholder="Any additional questions/comments?"></textarea>
+                    <button type="submit">Submit</button>
                 </form>
-            </div>
-            <div class="request-form" id="submitted">
-                <h2 id="display-name"></h2>
-                <h2 id="display-type"></h2>
-                <h2 id="display-subscription"></h2>
-                <h2 id="display-users"></h2>
-                <h2 id="display-release"></h2>
-                <h2 id="display-owner"></h2>
-                <h2 id="display-homepage"></h2>
-                <h2 id="display-image"></h2>
-                <h2 id="display-description"></h2>
-                <h2 id="display-rating"></h2>
             </div>
         </div>
         <div class="footer">
@@ -74,13 +53,11 @@
             </div>
         </div>
     </div>
-    <script type="module">
-        import { FormHandler } from './scripts/formHandler.js';
-
-        const formHandler = new FormHandler("form", {
-            name: "app-name",
-            desc: "app-desc",
-            rating: "app-rating"
-        });
+    <script>
+        // Simply resets form fields when submitted
+        window.addEventListener("pageshow", function () {
+            const form = document.getElementById("request");
+            if (form) form.reset();
+        })
     </script>
 </body>
