@@ -27,16 +27,11 @@ input[type="text"] {
 button {
   padding: 8px 16px;
   font-size: 1rem;
-  background-color: #007BFF;
-  color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 
-button:hover {
-  background-color: #0056b3;
-}
 
 
 .background {
@@ -46,12 +41,12 @@ button:hover {
     background-position: center;
 
     height: 100rem; */
-    background: linear-gradient(to top right, #B0E8B2, #E8B0E6, #DA81AA);
+    background: linear-gradient(to top right, #CBEFB6, #FCDDDF, #E18A8A);
     min-height: 100vh;
 }
 
 .header {
-    background-color: #FCBAF9;
+    background-color: #FCDDDF;
     box-shadow: 0 8px 20px 2px rgba(0, 0, 0, 0.3);
 
     overflow: hidden;
@@ -77,26 +72,12 @@ button:hover {
 }
 
 .header .nav-links a:hover {
-    color: #007BFF;
+    color: #660F3B;
     display: inline-block;
     transform: scale(1.1);
     transition: transform 0.3s ease;
 }
 
-<<<<<<< Updated upstream
-.header .nav-links a::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #007BFF;
-    transition: width 0.3s ease;
-}
-
-=======
->>>>>>> Stashed changes
 .header .nav-links a:hover::after {
     width: 100%;
 
@@ -117,7 +98,7 @@ button:hover {
 }
 
 .footer {
-    background-color: #FCBAF9;
+    background-color: #FCDDDF;
     box-shadow: 0 8px 20px 2px rgba(0, 0, 0, 0.3);
     overflow: hidden;
     display: flex;
@@ -141,26 +122,12 @@ button:hover {
 }
 
 .footer .nav-links a:hover {
-    color: #007BFF;
+    color: #660F3B;
     display: inline-block;
     transform: scale(1.1);
     transition: transform 0.3s ease;
 }
 
-<<<<<<< Updated upstream
-.footer .nav-links a::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #007BFF;
-    transition: width 0.3s ease;
-
-}
-=======
->>>>>>> Stashed changes
 
 .footer .nav-links a:hover::after {
     width: 100%;
@@ -188,7 +155,7 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #968A9090;
+    background-color: #ffffff90;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 3%;
     flex: 1;
@@ -228,6 +195,20 @@ button:hover {
     padding: 10px;
     gap: 85px;
     margin-bottom: 20px;
+    
+}
+
+.top-rated button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    color: #000000;
+}
+
+.top-rated button:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
 
 .fun-apps {
@@ -241,8 +222,21 @@ button:hover {
     margin-bottom: 20px;
 }
 
+.fun-apps button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    color: #000000;
+}
+
+.fun-apps button:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
 .app-container {
-    background-color: #968A9090;
+    background-color: #ffffff90;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 3%;
     display: flex;
@@ -257,7 +251,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #968A9090;
+    background-color: #ffffff90;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 3%;
     align-self: center;
@@ -273,6 +267,7 @@ button:hover {
 }
 
 .about-section h2 {
+    font-family: 'pacifico', cursive;
     padding-right: 20px;
     padding-left: 20px;
 }
@@ -283,8 +278,6 @@ button:hover {
     padding-left: 20px;
 }
 
-<<<<<<< Updated upstream
-=======
 .request-form {
     display: flex;
     flex-direction: column;
@@ -342,7 +335,6 @@ button:hover {
     border-radius: 8px;
 }
 
->>>>>>> Stashed changes
 .app-card h2 {
     margin: 0 0 5px;
 }
