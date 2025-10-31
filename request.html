@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/form_style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
@@ -19,39 +18,36 @@
     <div class="whole-page">
         <div class="header">
             <a href="index.html">
-                <h2 class="title">Hook, Line, and Sinker</h2>
+                <img src="site_images/logo_v2.png" alt="Logo" class="logo">
             </a>
             <div class="nav-links">
-<<<<<<< Updated upstream
-                <a href="index.html">Home</a> |
-                <a href="testStorage.html">Browse</a> |
-                <a href="about.html">About</a> |
-                <a href="request.html">Contact</a> |
-                <a><img src="site_images/magniglass.png" alt="magnifying glass"></a>
-=======
                 <a href="index.html">Home</a> 
                 <a href="testStorage.html">Browse</a> 
                 <a href="about.html">About</a> 
                 <a href="request.html">Contact</a> 
                 <a href="testStorage.html">Search</a>
                 <a href="profile.html">Profile</a>
->>>>>>> Stashed changes
             </div>
         </div>
         <div class="main-section">
             <div class="request-form">
                 <h2>Request Form</h2>
                 <p>
-                    Want another application to be added to our catalogue?  Please fill out the form
-                    belown and we'll take care of the rest!
+                    Have a question or want to request an app to be added to this appstore?
+                    Fill out our request form below!
                 </p>
-                <form action="https://formspree.io/f/xdkplgpv" method="POST" id="request">
-                    <input type="text" name="name" placeholder="App Name" required>
-                    <input type="text" name="firstAndLast" placeholder="First and Last Name" required>
-                    <input type="text" name="email" placeholder="Your Email" required>
-                    <textarea name="comments" rows="4" cols="50" placeholder="Any additional questions/comments?"></textarea>
-                    <button type="submit">Submit</button>
+
+                <form>
+                    <div class="inputs">
+                        <input type="text" name="app-name-input" placeholder="App Name" required>
+                        <input type="text" name="app-desc-input" placeholder="App Description" required>
+                        <button type="submit">Submit</button>
+                    </div>
+
                 </form>
+
+
+
             </div>
         </div>
         <div class="footer">
@@ -61,11 +57,4 @@
             </div>
         </div>
     </div>
-    <script>
-        // Simply resets form fields when submitted
-        window.addEventListener("pageshow", function () {
-            const form = document.getElementById("request");
-            if (form) form.reset();
-        })
-    </script>
 </body>
