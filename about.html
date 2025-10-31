@@ -26,8 +26,14 @@
                 <a href="testStorage.html">Browse</a> 
                 <a href="about.html">About</a> 
                 <a href="request.html">Contact</a> 
-                <a href="testStorage.html">Search</a>
                 <a href="profile.html">Profile</a>
+                <button onclick="toggleSearch()">
+                        <a><img src="site_images/magniglass.png" alt="magnifying glass"></a>
+                </button>
+                <div id="searchForm" class="search-container">
+                    <input type="text" placeholder="Search..." class="search-input">
+                    <button type="submit" class="search-submit">Go</button>
+                </div>
             </div>
 
         </div>
@@ -90,5 +96,10 @@
             </div>
         </div>
     </div>
-
+<script>
+    function toggleSearch() {
+        const searchForm = document.getElementById('searchForm');
+        searchForm.classList.toggle('active');
+    }
+</script>
 </body>
