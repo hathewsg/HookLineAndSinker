@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/form_style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
@@ -25,28 +26,24 @@
                 <a href="testStorage.html">Browse</a> |
                 <a href="about.html">About</a> |
                 <a href="request.html">Contact</a> |
-                <a href="testStorage.html">Search</a>
+                <a><img src="site_images/magniglass.png" alt="magnifying glass">
+                </a>
             </div>
         </div>
         <div class="main-section">
             <div class="request-form">
                 <h2>Request Form</h2>
                 <p>
-                    Have a question or want to request an app to be added to this appstore?
-                    Fill out our request form below!
+                    Want another application to be added to our catalogue?  Please fill out the form
+                    belown and we'll take care of the rest!
                 </p>
-
-                <form>
-                    <div class="inputs">
-                        <input type="text" name="app-name-input" placeholder="App Name" required>
-                        <input type="text" name="app-desc-input" placeholder="App Description" required>
-                        <button type="submit">Submit</button>
-                    </div>
-
+                <form action="https://formspree.io/f/xdkplgpv" method="POST" id="request">
+                    <input type="text" name="name" placeholder="App Name" required>
+                    <input type="text" name="firstAndLast" placeholder="First and Last Name" required>
+                    <input type="text" name="email" placeholder="Your Email" required>
+                    <textarea name="comments" rows="4" cols="50" placeholder="Any additional questions/comments?"></textarea>
+                    <button type="submit">Submit</button>
                 </form>
-
-
-
             </div>
         </div>
         <div class="footer">
@@ -56,4 +53,11 @@
             </div>
         </div>
     </div>
+    <script>
+        // Simply resets form fields when submitted
+        window.addEventListener("pageshow", function () {
+            const form = document.getElementById("request");
+            if (form) form.reset();
+        })
+    </script>
 </body>

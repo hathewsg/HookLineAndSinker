@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/browse_style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
@@ -12,38 +13,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <title>Test Page</title>
-    <script>
+    <script type="module">
         // Loading the JSON file after the webpage loads
-        window.addEventListener("DOMContentLoaded", () => {
-            fetch("apps.json")
-                .then(response => {
-                    // Throws error if json file not found
-                    if (!response.ok) {
-                        throw new Error("Failed to load apps.json");
-                    }
-                    return response.json();
-                })
-                .then(data => {
-                    // Whatever parent element the apps will be loaded into
-                    const container = document.getElementById("app-list");
+        import {AppLoader} from './scripts/AppLoader.js';
 
-                    // Loops through every app in "apps.json"
-                    data.forEach(app => {
-                        const div = document.createElement("div");
-                        div.className = "app-card";
-                        div.innerHTML = `
-                            <h2>${app.name}</h2>
-                            <h4>Rating: ${app.rating}</h4>
-                            <p>${app.description}</p>
-                        `;
-
-                        container.appendChild(div);
-                    })
-                })
-
-                // If an error is thrown, it will be printed to the console here
-                .catch(error => console.error("Error loading data: ", error));
-        })
+        // Create an instance and load the apps
+        const loader = new AppLoader("apps.json", "app-list");
+        loader.loadApps();
     </script>
 </head>
 
@@ -59,13 +35,14 @@
                     <a href="testStorage.html">Browse</a> |
                     <a href="about.html">About</a> |
                     <a href="request.html">Contact</a> |
-                    <a href="testStorage.html">Search</a>
+                    <a><img src="site_images/magniglass.png" alt="magnifying glass">
+                </a>
                 </div>
 
             </div>
             <div class="main-section">
                 <h1>Hook, Line, and Sinker</h1>
-                <h2>A list of all apps!</h2>
+                <h2>Browse Through All of Our Apps!</h2>
                 <div id="app-list" class="app-list">
                     <!-- Content will be loaded by the script here -->
                 </div>

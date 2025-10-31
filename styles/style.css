@@ -46,12 +46,12 @@ button:hover {
     background-position: center;
 
     height: 100rem; */
-    background: linear-gradient(to top right, #CBEFB6, #FCDDDF, #E18A8A);
+    background: linear-gradient(to top right, #B0E8B2, #E8B0E6, #DA81AA);
     min-height: 100vh;
 }
 
 .header {
-    background-color: #FCDDDF;
+    background-color: #FCBAF9;
     box-shadow: 0 8px 20px 2px rgba(0, 0, 0, 0.3);
 
     overflow: hidden;
@@ -77,7 +77,7 @@ button:hover {
 }
 
 .header .nav-links a:hover {
-    color: #660F3B;
+    color: #007BFF;
     display: inline-block;
     transform: scale(1.1);
     transition: transform 0.3s ease;
@@ -90,7 +90,7 @@ button:hover {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #660F3B;
+    background-color: #007BFF;
     transition: width 0.3s ease;
 }
 
@@ -105,7 +105,7 @@ button:hover {
 }
 
 .footer {
-    background-color: #FCDDDF;
+    background-color: #FCBAF9;
     box-shadow: 0 8px 20px 2px rgba(0, 0, 0, 0.3);
     overflow: hidden;
     display: flex;
@@ -123,7 +123,7 @@ button:hover {
 }
 
 .footer .nav-links a:hover {
-    color: #660F3B;
+    color: #007BFF;
     display: inline-block;
     transform: scale(1.1);
     transition: transform 0.3s ease;
@@ -136,7 +136,7 @@ button:hover {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #660F3B;
+    background-color: #007BFF;
     transition: width 0.3s ease;
 
 }
@@ -167,7 +167,7 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff90;
+    background-color: #968A9090;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 3%;
     flex: 1;
@@ -207,20 +207,6 @@ button:hover {
     padding: 10px;
     gap: 85px;
     margin-bottom: 20px;
-    
-}
-
-.top-rated button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    color: #000000;
-}
-
-.top-rated button:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
 }
 
 .fun-apps {
@@ -234,21 +220,8 @@ button:hover {
     margin-bottom: 20px;
 }
 
-.fun-apps button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    color: #000000;
-}
-
-.fun-apps button:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
-}
-
 .app-container {
-    background-color: #ffffff90;
+    background-color: #968A9090;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 3%;
     display: flex;
@@ -263,7 +236,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #ffffff90;
+    background-color: #968A9090;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 3%;
     align-self: center;
@@ -279,7 +252,6 @@ button:hover {
 }
 
 .about-section h2 {
-    font-family: 'pacifico', cursive;
     padding-right: 20px;
     padding-left: 20px;
 }
@@ -288,41 +260,6 @@ button:hover {
     line-height: 2;
     padding-right: 20px;
     padding-left: 20px;
-}
-
-.request-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
-    background-color: #ffffff90;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 3%;
-    padding: 20px;
-    margin: 20px;
-    max-width: 1000px;
-}
-
-.request-form h2 {
-    padding-right: 20px;
-    padding-left: 20px;
-}
-
-.request-form p {
-    line-height: 2;
-    text-align: center;
-    padding-right: 20px;
-    padding-left: 20px;
-}
-
-.request-form form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
-    align-items: center;
-    gap: 15px;
-    padding: 20px;
 }
 
 .inputs {
@@ -334,18 +271,7 @@ button:hover {
     max-width: 500px;
 }
 
-.app-list {
-    max-width: 600px;
-    margin: 20px auto;
-    text-align: center;
-}
 
-.app-card {
-    background: white;
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 8px;
-}
 
 .app-card h2 {
     margin: 0 0 5px;
