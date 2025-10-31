@@ -83,6 +83,7 @@ button:hover {
     transition: transform 0.3s ease;
 }
 
+<<<<<<< Updated upstream
 .header .nav-links a::after {
     content: "";
     position: absolute;
@@ -94,8 +95,19 @@ button:hover {
     transition: width 0.3s ease;
 }
 
+=======
+>>>>>>> Stashed changes
 .header .nav-links a:hover::after {
     width: 100%;
+
+}
+
+.nav-links a {
+    background-color: #ffffff90;
+    border-radius: 20px;
+    margin: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
 
 }
 
@@ -122,6 +134,12 @@ button:hover {
     padding: 10px;
 }
 
+.footer .nav-links a {
+    margin: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
 .footer .nav-links a:hover {
     color: #007BFF;
     display: inline-block;
@@ -129,6 +147,7 @@ button:hover {
     transition: transform 0.3s ease;
 }
 
+<<<<<<< Updated upstream
 .footer .nav-links a::after {
     content: "";
     position: absolute;
@@ -140,6 +159,8 @@ button:hover {
     transition: width 0.3s ease;
 
 }
+=======
+>>>>>>> Stashed changes
 
 .footer .nav-links a:hover::after {
     width: 100%;
@@ -262,6 +283,80 @@ button:hover {
     padding-left: 20px;
 }
 
+<<<<<<< Updated upstream
+=======
+.request-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    background-color: #ffffff90;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+     border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    max-width: 1000px;
+}
+
+.request-form h2 {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.request-form p {
+    line-height: 2;
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.request-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.app-list {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.app-card {
+    background: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+>>>>>>> Stashed changes
 .app-card h2 {
     margin: 0 0 5px;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    background-color: #ffffff90;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    width: 100%;
+    max-width: 1000px;
 }
