@@ -37,17 +37,13 @@
                     Fill out our request form below!
                 </p>
 
-                <form>
-                    <div class="inputs">
-                        <input type="text" name="app-name-input" placeholder="App Name" required>
-                        <input type="text" name="app-desc-input" placeholder="App Description" required>
-                        <button type="submit">Submit</button>
-                    </div>
-
+                <form action="https://formspree.io/f/xdkplgpv" method="POST" id="request">
+                    <input type="text" name="name" placeholder="App Name" required>
+                    <input type="text" name="firstAndLast" placeholder="First and Last Name" required>
+                    <input type="text" name="email" placeholder="Your Email" required>
+                    <textarea name="comments" rows="4" cols="50" placeholder="Any additional questions/comments?"></textarea>
+                    <button type="submit" class="submitButton">Submit</button>
                 </form>
-
-
-
             </div>
         </div>
         <div class="footer">
@@ -57,4 +53,11 @@
             </div>
         </div>
     </div>
+    <script>
+        // Simply Resets form fields when submitted
+        window.addEventListener("pageshow", function () {
+            const form = document.getElementById("request");
+            if (form) form.reset();
+        })
+    </script>
 </body>
