@@ -1,5 +1,5 @@
 /*
-    File Name: formHandler.js
+    File Name: AppLoader.js
     Author: Ethan Weaver
     
     File Desc:
