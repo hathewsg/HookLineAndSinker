@@ -15,7 +15,7 @@
     <title>Test Page</title>
     <script type="module">
         // Loading the JSON file after the webpage loads
-        import {AppLoader} from './scripts/AppLoader.js';
+        import { AppLoader } from './scripts/AppLoader.js';
 
         // Create an instance and load the apps
         const loader = new AppLoader("apps.json", "app-list");
@@ -27,18 +27,31 @@
     <div style="text-align: center;">
         <div class="whole-page">
             <div class="header">
+
                 <a href="index.html">
-                    <h2 class="title">Hook, Line, and Sinker</h2>
+                    <img src="site_images/logo_v2.png" alt="Logo" class="logo">
                 </a>
                 <div class="nav-links">
-                    <a href="index.html">Home</a> 
-                    <a href="testStorage.html">Browse</a> 
-                    <a href="about.html">About</a> 
-                    <a href="request.html">Contact</a> 
-                    <a href="testStorage.html">Search</a>
-                    <a href="profile.html">Profile</a>
-                </div>
+                    <div class="left">
+                        <a href="index.html">Home</a>
+                        <a href="testStorage.html">Browse</a>
+                        <a href="about.html">About</a>
+                        <a href="request.html">Contact</a>
+                        <button onclick="toggleSearch()">
+                            <a><img src="site_images/magniglass.png" alt="magnifying glass" class="search-icon"></a>
+                        </button>
+                        <div id="searchForm" class="search-container">
+                            <input type="text" placeholder="Search..." class="search-input">
+                            <button type="submit" class="search-submit">Go</button>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <a href="profile.html">
+                            <img src="site_images/Default_pfp.png" alt="Profile" class="profile-icon">
+                        </a>
+                    </div>
 
+                </div>
             </div>
             <div class="main-section">
                 <h1>Hook, Line, and Sinker</h1>
@@ -49,8 +62,8 @@
             </div>
             <div class="footer">
                 <div class="nav-links">
-                    <a href="testStorage.html">Back to Top</a> 
-                    <a href="about.html">About</a> 
+                    <a href="testStorage.html">Back to Top</a>
+                    <a href="about.html">About</a>
                     <a href="request.html">Contact</a>
                 </div>
             </div>
@@ -58,5 +71,12 @@
 
     </div>
 </body>
+
+<script>
+    function toggleSearch() {
+        const searchForm = document.getElementById('searchForm');
+        searchForm.classList.toggle('active');
+    }
+</script>
 
 </html>

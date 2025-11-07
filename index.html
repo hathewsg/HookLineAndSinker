@@ -17,116 +17,139 @@
 <body class="background">
     <div class="whole-page">
         <div class="header">
+
             <a href="index.html">
                 <img src="site_images/logo_v2.png" alt="Logo" class="logo">
             </a>
             <div class="nav-links">
-                <a href="index.html">Home</a> 
-                <a href="testStorage.html">Browse</a> 
-                <a href="about.html">About</a> 
-                <a href="request.html">Contact</a> 
-                <a href="testStorage.html">Search</a>
-                <a href="profile.html">Profile</a>
-            </div>
-
-        </div>
-        <div class="main-section">
-            <div class="top-row">
-                <div class="top-inner">
-                    <p>
-                        Welcome to Hook, Line, and Sinker, your one-stop app store for all things relationship-oriented!
-                        Whether you're a single looking for love or someone already in a relationship looking for a way
-                        to keep things smooth, you can
-                        find an app to help you here! Browse through our curated selection of relationship application,
-                        from dating apps to journaling apps.
-                        Dive in and discover the tools you need to make your next or current relationship a success!
-                    </p>
+                <div class="left">
+                    <a href="index.html">Home</a>
+                    <a href="testStorage.html">Browse</a>
+                    <a href="about.html">About</a>
+                    <a href="request.html">Contact</a>
+                    <button onclick="toggleSearch()">
+                        <a><img src="site_images/magniglass.png" alt="magnifying glass" class="search-icon"></a>
+                    </button>
+                    <div id="searchForm" class="search-container">
+                        <input type="text" placeholder="Search..." class="search-input">
+                        <button type="submit" class="search-submit">Go</button>
+                    </div>
                 </div>
-                <div class="top-inner">
-                    <p>
-                        Our list of apps include:
-                    </p>
-                    <ul>
-                        <li>Dating apps</li>
-                        <li>Couples counseling apps</li>
-                        <li>Communication apps</li>
-                        <li>Journaling apps</li>
-                        <li>Fun activity apps for couples</li>
-                        <li>And more!</li>
-                    </ul>
-
-                </div>
-
-            </div>
-            <div class="app-rows">
-                <h2 style="font-family: 'Pacifico', cursive; color: #660F3B;">Top Rated Apps</h2>
-                <div id="top-rated" class="top-rated">
-                    <button>
-                        <div id="app-container" class="app-container">
-                            <h4>PLACEHOLDER</h4>
-                            <p>Title: lorem ipsum</p>
-                            <p>Rating: lorem ipsum</p>
-                        </div>
-                    </button>
-
-                    <button>
-                        <div id="app-container" class="app-container">
-                            <h4>PLACEHOLDER</h4>
-                            <p>Title: lorem ipsum</p>
-                            <p>Rating: lorem ipsum</p>
-                        </div>
-                    </button>
-                    <button>
-                        <div id="app-container" class="app-container">
-                            <h4>PLACEHOLDER</h4>
-                            <p>Title: lorem ipsum</p>
-                            <p>Rating: lorem ipsum</p>
-                        </div>
-                    </button>
-                    <button> 
-                        <h1 style="color: #660F3B">></h1>
-                    </button>
-                    
-                </div>
-                <h2 style="font-family: 'Pacifico', cursive; color: #660F3B;">Fun Apps to Try</h2>
-                <div id="fun-apps" class="fun-apps">
-                    <button>
-                        <div id="app-container" class="app-container">
-                            <h4>PLACEHOLDER</h4>
-                            <p>Title: lorem ipsum</p>
-                            <p>Rating: lorem ipsum</p>
-                        </div>
-                    </button>
-                    <button>
-                        <div id="app-container" class="app-container">
-                            <h4>PLACEHOLDER</h4>
-                            <p>Title: lorem ipsum</p>
-                            <p>Rating: lorem ipsum</p>
-                        </div>
-                    </button>
-                    <button>
-                        <div id="app-container" class="app-container">
-                            <h4>PLACEHOLDER</h4>
-                            <p>Title: lorem ipsum</p>
-                            <p>Rating: lorem ipsum</p>
-                        </div>
-                    </button>
-                        <button> 
-                        <h1 style="color: #660F3B">></h1>
-                    </button>
-
+                <div class="right">
+                    <a href="profile.html">
+                        <img src="site_images/Default_pfp.png" alt="Profile" class="profile-icon">
+                    </a>
                 </div>
 
             </div>
         </div>
-        <div class="footer">
-            <div class="nav-links">
-                <a href="index.html">Back to Top</a> 
-                <a href="about.html">About</a> 
-                <a href="request.html">Contact</a>
+
+
+    </div>
+    <div class="main-section">
+        <div class="top-row">
+            <div class="top-inner">
+                <p>
+                    Welcome to Hook, Line, and Sinker, your one-stop app store for all things relationship-oriented!
+                    Whether you're a single looking for love or someone already in a relationship looking for a way
+                    to keep things smooth, you can
+                    find an app to help you here! Browse through our curated selection of relationship application,
+                    from dating apps to journaling apps.
+                    Dive in and discover the tools you need to make your next or current relationship a success!
+                </p>
             </div>
+            <div class="top-inner">
+                <p>
+                    Our list of apps include:
+                </p>
+                <ul>
+                    <li>Dating apps</li>
+                    <li>Couples counseling apps</li>
+                    <li>Communication apps</li>
+                    <li>Journaling apps</li>
+                    <li>Fun activity apps for couples</li>
+                    <li>And more!</li>
+                </ul>
+
+            </div>
+
+        </div>
+        <div class="app-rows">
+            <h2 style="font-family: 'Pacifico', cursive; color: #660F3B;">Top Rated Apps</h2>
+            <div id="top-rated" class="top-rated">
+                <button>
+                    <div id="app-container" class="app-container">
+                        <h4>PLACEHOLDER</h4>
+                        <p>Title: lorem ipsum</p>
+                        <p>Rating: lorem ipsum</p>
+                    </div>
+                </button>
+
+                <button>
+                    <div id="app-container" class="app-container">
+                        <h4>PLACEHOLDER</h4>
+                        <p>Title: lorem ipsum</p>
+                        <p>Rating: lorem ipsum</p>
+                    </div>
+                </button>
+                <button>
+                    <div id="app-container" class="app-container">
+                        <h4>PLACEHOLDER</h4>
+                        <p>Title: lorem ipsum</p>
+                        <p>Rating: lorem ipsum</p>
+                    </div>
+                </button>
+                <button>
+                    <h1 style="color: #660F3B">></h1>
+                </button>
+
+            </div>
+            <h2 style="font-family: 'Pacifico', cursive; color: #660F3B;">Fun Apps to Try</h2>
+            <div id="fun-apps" class="fun-apps">
+                <button>
+                    <div id="app-container" class="app-container">
+                        <h4>PLACEHOLDER</h4>
+                        <p>Title: lorem ipsum</p>
+                        <p>Rating: lorem ipsum</p>
+                    </div>
+                </button>
+                <button>
+                    <div id="app-container" class="app-container">
+                        <h4>PLACEHOLDER</h4>
+                        <p>Title: lorem ipsum</p>
+                        <p>Rating: lorem ipsum</p>
+                    </div>
+                </button>
+                <button>
+                    <div id="app-container" class="app-container">
+                        <h4>PLACEHOLDER</h4>
+                        <p>Title: lorem ipsum</p>
+                        <p>Rating: lorem ipsum</p>
+                    </div>
+                </button>
+                <button>
+                    <h1 style="color: #660F3B">></h1>
+                </button>
+
+            </div>
+
         </div>
     </div>
+    <div class="footer">
+        <div class="nav-links">
+            <a href="index.html">Back to Top</a>
+            <a href="about.html">About</a>
+            <a href="request.html">Contact</a>
+        </div>
+    </div>
+    </div>
 </body>
+
+<script>
+    function toggleSearch() {
+        const searchForm = document.getElementById('searchForm');
+        searchForm.classList.toggle('active');
+    }
+</script>
 
 </html>

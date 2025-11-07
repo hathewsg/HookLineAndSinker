@@ -11,26 +11,26 @@ a {
 }
 
 form {
-  display: flex;
-  gap: 10px; 
-  align-items: center;
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
 input[type="text"] {
-  padding: 8px;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  flex: 1; 
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1;
 }
 
 button {
-  padding: 8px 16px;
-  font-size: 1rem;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  background: transparent;
+    padding: 8px 16px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background: transparent;
 }
 
 .submitButton {
@@ -88,7 +88,13 @@ button {
 
 }
 
-.nav-links a {
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-links .left a {
     background-color: #ffffff90;
     border-radius: 20px;
     margin: 5px;
@@ -97,9 +103,20 @@ button {
 
 }
 
-.nav-links img {
+.search-icon {
     max-width: 20px;
     max-height: 20px;
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #660F3B;
+    border-radius: 100%;
+}
+
+.search-container {
+    border-color: #660F3B;
 }
 
 .footer {
@@ -121,6 +138,8 @@ button {
 }
 
 .footer .nav-links a {
+    background-color: #ffffff90;
+    border-radius: 20px;
     margin: 5px;
     padding-right: 20px;
     padding-left: 20px;
@@ -200,7 +219,7 @@ button {
     padding: 10px;
     gap: 85px;
     margin-bottom: 20px;
-    
+
 }
 
 .top-rated button {
@@ -290,7 +309,7 @@ button {
     align-self: center;
     background-color: #ffffff90;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-     border-radius: 20px;
+    border-radius: 20px;
     padding: 20px;
     margin: 20px;
     max-width: 1000px;
@@ -359,31 +378,31 @@ button {
 }
 
 .search-container {
-  max-width: 0;
-  overflow: hidden;
-  transition: max-width 0.4s ease;
-  display: inline-flex;
-  border: 2px solid #ccc;
-  border-radius: 25px;
-  padding: 0;
+    max-width: 0;
+    overflow: hidden;
+    transition: max-width 0.4s ease;
+    display: inline-flex;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    padding: 0;
 }
 
 .search-container.active {
-  max-width: 400px;
-  padding: 5px 10px;
+    max-width: 400px;
+    padding: 5px 10px;
 }
 
 .search-input {
-  border: none;
-  outline: none;
-  padding: 8px;
-  width: 100%;
-  border-radius: 25px;
+    border: none;
+    outline: none;
+    padding: 8px;
+    width: 100%;
+    border-radius: 25px;
 }
 
 .search-submit {
-  background: none;
-  border: none;
-  padding: 5px 10px;
-  cursor: pointer;
+    background: none;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
 }
