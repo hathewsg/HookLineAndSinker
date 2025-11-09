@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/app_info_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Index</title>
+</head>
+
+<body class="background">
+    <div class="whole-page">
+        <div class="header">
+
+            <a href="index.html">
+                <img src="site_images/logo_v2.png" alt="Logo" class="logo">
+            </a>
+            <div class="nav-links">
+                <div class="left">
+                    <a href="index.html">Home</a>
+                    <a href="testStorage.html">Browse</a>
+                    <a href="about.html">About</a>
+                    <a href="request.html">Contact</a>
+                    <button onclick="toggleSearch()">
+                        <a><img src="site_images/magniglass.png" alt="magnifying glass" class="search-icon"></a>
+                    </button>
+                    <div id="searchForm" class="search-container">
+                        <input type="text" placeholder="Search..." class="search-input">
+                        <button type="submit" class="search-submit">Go</button>
+                    </div>
+                </div>
+                <div class="right">
+                    <a href="profile.html">
+                        <img src="site_images/Default_pfp.png" alt="Profile" class="profile-icon">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+    <div class="main-section">
+        <div class="app-info">
+            <div class="left-side">
+                <div class="app-title">
+                    <h1 id="app-title">App Name</h1>
+                </div>
+                <div class="app-img" id="app-img">
+                    <img src="site_images/placeholder_app_img.png" alt="App Image" class="app-image" id="app-image">
+                </div>
+                <div class="sites-available" id="sites-available">
+                    <a><img src="site_images/placeholder_site_img(google).png" alt="Site Image" class="site-image" id="site-image"></a>
+                </div>
+                <div class="star-rating">
+                    <h2 id="star-rating">Rating: <strong>★★★★☆ (placeholder)</strong></h2>
+                </div>
+                <div class="price">
+                    <h2>Price: <strong id="class">Free/Paid</strong></h2>
+                </div>
+                <div class="tags">
+                    <p>Tags:</p>
+                    <ul id="tags">
+                        <li>#Tag1 (placeholder)</li>
+                        <li>#Tag2 (placeholder)</li>
+                        <li>#Tag3 (placeholder)</li>
+                </div>
+
+            </div>
+
+            <div class="right-side">
+                <div class="description">
+                    <h2>Full Description:</h2>
+                    <p id="description">
+                        This is a placeholder description for the app. Here you will find detailed information about
+                        the app's features, functionality, and benefits. Learn how this app can help you improve your
+                        relationships and enhance your connection with others. :3
+                    </p>
+
+                    <p id="developer-name">
+                        <strong>Developer:</strong>
+                        [Developer Name Placeholder]
+                    </p>
+                </div>
+                <div class="comment-section">
+                    <div class="top">
+                        <h2>Comments:</h2>
+                        <button class="comment-button">
+                            Leave a Comment
+                        </button>
+                    </div>
+
+                    <div class="comment-container">
+                        <img src="site_images/Default_pfp.png" alt="User Profile" class="comment-profile-icon" id="comment-profile-icon">
+                        <div class="comment-content">
+                            <p id="comment"><strong id="username">Username(placeholder):</strong> This is a placeholder comment for the app. I
+                                really enjoyed using this app because... :P</p>
+
+                        </div>
+
+
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+            </div>
+
+        </div>
+        <div class="footer">
+            <div class="nav-links">
+                <a href="appInfo.html">Back to Top</a>
+                <a href="about.html">About</a>
+                <a href="request.html">Contact</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    function toggleSearch() {
+        const searchForm = document.getElementById('searchForm');
+        searchForm.classList.toggle('active');
+    }
+</script>
+
+</html>

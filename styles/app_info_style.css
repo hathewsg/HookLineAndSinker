@@ -1,0 +1,123 @@
+.main-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    min-height: 100vh;
+
+}
+
+.app-info {
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+    margin: 40px;
+    max-width: 1300px;
+    background-color: #ffffff90;
+    border-radius: 20px;
+
+}
+
+.app-info .left-side {
+    flex: 1;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-info .right-side {
+    flex: 2;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-image {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    align-self: center;
+}
+
+.sites-available {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.site-image {
+    border-radius: 15px;
+    max-width: 50px;
+    max-height: 50px;
+    padding: 10px;
+}
+
+.tags {
+    border: #E18A8A 2px solid;
+    border-radius: 20px;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.description {
+    border: #E18A8A 2px solid;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+.comment-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    border: #E18A8A 2px solid;
+    border-radius: 20px;
+    padding: 10px;
+    
+}
+
+.comment-section .top {
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.comment-button {
+    margin-left: auto;
+    margin-right: 20px;
+    padding: 10px 20px;
+    background-color: #E18A8A;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+
+
+}
+
+.comment-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.comment-profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+.footer {
+    margin-top: auto;
+    max-width: 100%;
+}
