@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/profile_style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
@@ -35,22 +36,50 @@
                         <button type="submit" class="search-submit">Go</button>
                     </div>
                 </div>
-                <div class="right">
-                    <a href="profile.html">
-                        <img src="site_images/Default_pfp.png" alt="Profile" class="profile-icon">
-                    </a>
-                </div>
+
 
             </div>
         </div>
         <div class="main-section">
-            <div class="profile-info">
-                <h2>User Profile</h2>
-                <p>Welcome, [Username]!</p>
-                <p>Email:
-                <p>
+            <div class="profile-section">
+                <div class="profile-info">
+                    <h2>Welcome back, <strong id="username">[Username]</strong>!</h2>
+                    <div class="prof-img-container">
+                        <img src="site_images/Default_pfp.png" alt="Profile Picture" class="profile-img"
+                            id="profile-picture">
+                        <button class="edit-profile-img" id="edit-profile-img">Edit Profile Image</button>
+                    </div>
+                    <p class="username">Username:
+                    <p id="username">User123abc</p>
+                    </p>
+                    <p class="email">Email:
+                    <p id="email">abc123@placeholder.com</p>
+                    </p>
+                    <p class="favorited-apps">Favorited Apps:</p>
+                    <ul id="favorited-apps">
+                        <li><a>App 1</a></li>
+                        <li><a>App 2</a></li>
+                        <li><a>App 3</a></li>
+                        <button class="edit-profile-info" id="edit-profile-info">Edit Profile Info</button>
+                    </div>
+                    <div class="other-stuff">
+                        <div class="extra-prof-stuff">
+                            <p>You can now comment!</p>
+                            <a href="testStorage.html" class="extra-buttons" id="go-to-browse">Go to Browse Page</a>
 
+                        </div>
+                        <div class="extra-prof-stuff">
+                            <p>Lorem Ipsum!</p>
+                            <a class="extra-buttons" id="PLACEHOLDER">PLACEHOLDER</a>
 
+                        </div>
+                        <div class="extra-prof-stuff">
+                            <p>Lorem Ipsum!</p>
+                            <a class="extra-buttons" id="PLACEHOLDER">PLACEHOLDER</a>
+
+                        </div>
+                        
+                    </div>
 
             </div>
 

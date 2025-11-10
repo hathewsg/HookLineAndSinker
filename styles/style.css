@@ -363,20 +363,6 @@ button {
     margin: 0 0 5px;
 }
 
-.profile-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
-    background-color: #ffffff90;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-    padding: 20px;
-    margin: 20px;
-    width: 100%;
-    max-width: 1000px;
-}
-
 .search-container {
     max-width: 0;
     overflow: hidden;
