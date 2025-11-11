@@ -26,8 +26,8 @@
 <body class="background">
     <div style="text-align: center;">
         <div class="whole-page">
+            <!-- Navigation -->
             <div class="header">
-
                 <a href="index.html">
                     <img src="site_images/logo_v2.png" alt="Logo" class="logo">
                 </a>
@@ -50,16 +50,35 @@
                             <img src="site_images/Default_pfp.png" alt="Profile" class="profile-icon">
                         </a>
                     </div>
-
                 </div>
             </div>
+
             <div class="main-section">
+                <!-- Browse Title -->
                 <h1>Hook, Line, and Sinker</h1>
                 <h2>Browse Through All of Our Apps!</h2>
+
+                <!-- Sorting/Filtering Section -->
+                <div class="filtering">
+                    <button id="filterButton" onclick="openSorting()" class="filterButton">Sort or Filter</button>
+                    <div class="filterOptions" id="filterOptions">
+                        <div class="filterFields">
+                            <h4>Filter: </h4>
+                            Name: <input type="text" name="appName" placeholder="Tinder"><br>
+                            Rating: <input type="number" name="appRating" placeholder="0.0">
+                        </div>
+                        <div class="sortingFields">
+                            <h4>Sort By: </h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- App Browsing -->
                 <div id="app-list" class="app-list">
                     <!-- Content will be loaded by the script here -->
                 </div>
             </div>
+
+            <!-- Footer -->
             <div class="footer">
                 <div class="nav-links">
                     <a href="testStorage.html">Back to Top</a>
@@ -68,15 +87,32 @@
                 </div>
             </div>
         </div>
-
     </div>
+
+    <script>
+        // Search Bar
+        function toggleSearch() {
+            const searchForm = document.getElementById('searchForm');
+            searchForm.classList.toggle('active');
+        }
+
+        // Filtering
+        const filterButton = document.getElementById("filterButton");
+        const filterOptions = document.getElementById("filterOptions");
+        isOpen = false;
+
+        function openSorting() {
+            console.log("Hello world");
+            if (!isOpen) {
+                filterButton.innerHTML = "Close";
+                filterOptions.style.display = "grid";
+                isOpen = true;
+            } else {
+                filterButton.innerHTML = "Sort or Filter";
+                filterOptions.style.display = "none";
+                isOpen = false;
+            }
+        }
+    </script>
 </body>
-
-<script>
-    function toggleSearch() {
-        const searchForm = document.getElementById('searchForm');
-        searchForm.classList.toggle('active');
-    }
-</script>
-
 </html>

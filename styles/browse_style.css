@@ -1,7 +1,6 @@
 /*
     Styling for browse page and each individual app card
 */
-
 .app-list {
     width: 100;
     padding-left: 15%;
@@ -29,4 +28,36 @@
 .app-card img{
     max-width:100px;
     border-radius: 1.3rem;
+}
+
+/* ---------- Filter Classes ---------- */
+.filterButton {
+    background-color: #ffffff90;
+    font-weight: bold;
+    border-radius: 20px;
+    margin: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.filterButton:hover {
+    color: #660F3B;
+    display: inline-block;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.filtering {
+    margin-bottom: 5em;
+    padding-left: 16%;
+    padding-right: 16%;
+}
+.filterOptions {
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    background-color: #ffffff90;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 3%;
+    flex: 1;
+    padding: 10px;
+    margin: 10px;
 }
