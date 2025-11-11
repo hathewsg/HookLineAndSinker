@@ -3,11 +3,14 @@
 */
 
 .app-list {
-    margin: 20px auto;
+    width: 100;
+    padding-left: 15%;
+    padding-right: 15%;
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 3em;
+    column-gap: 10%;
+    row-gap: 3em;
 }
 .error {
     grid-column: 1 / -1;
@@ -17,10 +20,10 @@
 
 .app-card {
     background: white;
-    width: 250px;
     padding: 15px;
     margin-bottom: 10px;
     border-radius: 8px;
+    height: 250px;
 }
 
 .app-card img{
