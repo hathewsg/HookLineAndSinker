@@ -54,10 +54,18 @@
 .filterOptions {
     display: none;
     grid-template-columns: 1fr 1fr;
+}
+
+.filterFields, .sortingFields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     background-color: #ffffff90;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 3%;
     flex: 1;
     padding: 10px;
     margin: 10px;
+}
+.filterFields h4, .sortingFields h4 {
+    grid-column: 1 / -1;
 }
