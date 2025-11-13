@@ -66,6 +66,11 @@ export class AppLoader {
                 <p>${app["release-date"]}</p>
             `;
 
+            // When clicked, goes to appInfo and passes the app name
+            div.addEventListener("click", () => {
+                window.location.href = `appInfo.html?name=${encodeURIComponent(app.name)}`;
+            });
+
             this.container.appendChild(div);
         })
     }

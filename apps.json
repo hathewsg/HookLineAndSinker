@@ -9,6 +9,8 @@
         "owner": "Match Group",
         "homepage": "https://mtch.com",
         "image-name": "tinder.jpg",
+        "appleStore": "https://apps.apple.com/us/app/tinder-dating-app-date-chat/id547702041",
+        "googleStore": "https://play.google.com/store/apps/details?id=com.tinder&hl=en_US",
         "description": "Single people, listen up: If you’re looking for love, want to start dating, or just keep it casual, you need to be on Tinder. With over 55 billion matches made, it’s the place to be to meet your next best match. Let’s be real, the dating landscape looks very different today, as most people are meeting online. With Tinder, the world’s most popular free dating app, you have millions of other single people at your fingertips and they’re all ready to meet someone like you. Whether you’re straight or in the LGBTQIA community, Tinder’s here to bring you all the sparks."
     },
     {
@@ -21,6 +23,8 @@
         "owner": "Bumble Incorporated",
         "homepage": "https://bumble.com",
         "image-name": "bumble.png",
+        "appleStore": "https://apps.apple.com/us/app/bumble-dating-app-meet-date/id930441707",
+        "googleStore": "https://play.google.com/store/apps/details?id=com.bumble.app&hl=en_US",
         "description": "Whitney Wolfe Herd founded Bumble with one goal: to build the most trusted space to find love, where women make the first move, and connection is rooted in respect. As CEO, she still leads with the same belief: that finding love online should feel intentional, safe, and authentic. Bumble is about more than dating. It’s about helping people find what matters, with care, intention, and heart. That means using technology and AI to deepen human connection, not replace it. We’re using everything we’ve learned: the good, the imperfect and the honest, so that our entire community continues to feel welcome on Bumble."
     },
     {
@@ -33,6 +37,8 @@
         "owner": "Match Group",
         "homepage": "https://mtch.com",
         "image-name": "hinge.png",
+        "appleStore": "https://apps.apple.com/us/app/hinge-dating-app-match-date/id595287172",
+        "googleStore": "https://play.google.com/store/apps/details?id=co.hinge.app&hl=en_US",
         "description": "Hinge is built on the belief that anyone looking for love should be able to find it. It’s also built on an acclaimed Nobel-Prize-winning algorithm, so we can succeed in getting you out on promising dates, not keeping you on the app."
     },
     {
@@ -45,6 +51,8 @@
         "owner": "Sam Vicente Acquisition Partners",
         "homepage": "https://www.grindr.com",
         "image-name": "grindr.jpg",
+        "appleStore": "https://apps.apple.com/us/app/grindr-gay-dating-chat/id319881193",
+        "googleStore": "https://play.google.com/store/apps/details?id=com.grindrapp.android&hl=en_US",
         "description": "Grindr is the world’s largest social networking app for gay, bi, trans, and queer people. With millions of daily users in nearly every country, Grindr makes it easy to meet new people, chat instantly, and explore what’s happening in your community—wherever you are."
     },
     {
@@ -57,6 +65,8 @@
         "owner": "Bumble Incorporated",
         "homepage": "https://www.bumble.com",
         "image-name": "badoo.jpg",
+        "appleStore": "https://apps.apple.com/us/app/badoo-dating-meet-new-people/id351331194",
+        "googleStore": "https://play.google.com/store/apps/details?id=com.badoo.mobile&hl=en_US",
         "description": "Badoo is the dating app that helps you meet real people nearby or around the world. With millions of users across 190+ countries, Badoo makes it easy to chat, connect, and discover genuine relationships — whether you’re looking for friendship, dating, or something more."
     },
     {
@@ -69,6 +79,8 @@
         "owner": "FarmersOnly Media Incorporated",
         "homepage": "https://famersonly.com",
         "image-name": "farmersOnly.png",
+        "appleStore": "",
+        "googleStore": "",
         "description": "City folks just don’t get it — but FarmersOnly does. Whether you’re a farmer, rancher, or simply someone who loves the country lifestyle, FarmersOnly is the place to meet people who share your values, passions, and way of life."
     },
     {
@@ -81,6 +93,8 @@
         "owner": "Wink Tech",
         "homepage": "https://www.duetapp.net",
         "image-name": "duet.png",
+        "appleStore": "https://apps.apple.com/us/app/duet-dating-app-chat-meet/id1673723000",
+        "googleStore": "https://play.google.com/store/apps/details?id=next.bondee.tech&hl=en_US",
         "description": "Ready to find that special connection? Welcome to Duet - a new dating app featuring REAL profiles for all kinds of interests. Whether you're a gamer, fitness enthusiast, foodie, fashionista, cat person, meme expert, cinephile or a bookworm, you'll find someone whose interests and passions strike a chord with you."
     },
     {
@@ -93,6 +107,8 @@
         "owner": "Alex Pasykov",
         "homepage": "https://www.hily.com",
         "image-name": "hily.jpg",
+        "appleStore": "https://apps.apple.com/us/app/hily-dating-app-meet-date/id1250946975",
+        "googleStore": "https://play.google.com/store/apps/details?id=com.hily.app&hl=en_US",
         "description": "Hily (short for “Hey, I Like You”) is the smart dating app designed to help you form genuine connections safely and easily. Whether you’re looking for friendship, love, or something in between, Hily makes meeting new people fun, effortless, and secure."
     },
     {
@@ -105,6 +121,8 @@
         "owner": "Match Group",
         "homepage": "https://www.mtch.com",
         "image-name": "okCupid.png",
+        "appleStore": "https://apps.apple.com/us/app/okcupid-dating-date-singles/id338701294",
+        "googleStore": "https://play.google.com/store/apps/details?id=com.okcupid.okcupid&hl=en_US",
         "description": "OkCupid is the dating app that helps you find people who share your interests, values, and outlook on life. With thoughtful questions, inclusive features, and smart matching, OkCupid goes beyond looks — it’s about personality and compatibility."
     },
     {
@@ -117,6 +135,8 @@
         "owner": "Better Half Limited",
         "homepage": "https://www.paired.com",
         "image-name": "paired.png",
+        "appleStore": "https://apps.apple.com/us/app/paired-couples-relationship/id1469609343",
+        "googleStore": "https://play.google.com/store/apps/details?id=com.getpaired.app&hl=en_US",
         "description": "Paired is designed for couples who want to deepen their bond, improve communication, and keep the love fresh — all in just a few minutes a day. Whether you're newly together or have been together for years, Paired gives you meaningful tools to stay connected."
     },
     {
@@ -129,6 +149,8 @@
         "owner": "Poppy AI Incorporated",
         "homepage": "https://www.wafflejournal.com/about",
         "image-name": "waffle.png",
+        "appleStore": "https://apps.apple.com/us/app/waffle-shared-journal/id1519726353",
+        "googleStore": "https://play.google.com/store/apps/details?id=ai.poppy.waffle&hl=en_US",
         "description": "Stay connected and get to know the people you care about better. With Waffle you can co-journal with your partner, family or friends — share everyday moments, reflect together, and deepen your bond."
     },
     {
@@ -141,6 +163,8 @@
         "owner": "Heartbit S.R.L",
         "homepage": "https://www.couplejoyapp.com",
         "image-name": "coupleJoy.png",
+        "appleStore": "https://apps.apple.com/us/app/couple-joy-relationship-app/id1624758651",
+        "googleStore": "https://play.google.com/store/apps/details?id=com.angcosmin.couple&hl=en_US",
         "description": "Stay connected to the one you love, even when you’re apart. Join your partner on Couple Joy to have fun together, strengthen your bond, and discover new things about each other."
     },
     {
@@ -153,6 +177,8 @@
         "owner": "Talkspace",
         "homepage": "https://www.talkspace.com",
         "image-name": "lasting.png",
+        "appleStore": "https://apps.apple.com/us/app/lasting-marriage-couples/id1225049619",
+        "googleStore": "https://play.google.com/store/apps/details?id=com.lasting.lasting&hl=en_US",
         "description": "Lasting makes couples counseling simple. Build a healthier, happier relationship in a few minutes a day with the #1 couples counseling app."
     },
     {
@@ -165,6 +191,8 @@
         "owner": "Notion",
         "homepage": "https://agapewellness.notion.site/About-Us-dd3aaa59c7c64bf0afb06da42691d98c",
         "image-name": "agape.png",
+        "appleStore": "https://apps.apple.com/us/app/agap%C3%A9-feel-close-when-apart/id1507907556",
+        "googleStore": "https://play.google.com/store/apps/details?id=com.getdailyagape&hl=en_US",
         "description": "Feel connected, even when you’re apart. Agapé turns everyday moments into meaningful ones by delivering one thought‑provoking question a day—designed for you and your partner. Once both of you respond, you unlock each other’s answers and spark a deeper conversation."
     },
     {
@@ -177,6 +205,8 @@
         "owner": "Luffian Labs",
         "homepage": "https://www.lufianlabs.com",
         "image-name": "coupleGrow.jpg",
+        "appleStore": "https://apps.apple.com/us/app/couplegrow-relationship-app/id6443615953",
+        "googleStore": "https://play.google.com/store/apps/details?id=com.lufianlabs.beloved&hl=en_US",
         "description": "CoupleGrow is an app made for couples who are looking to take their relationship to the next level, whether you're just starting out or have been together for years. You'll love the personalized approach that our app takes, tailoring activities to your specific needs and preferences. With 5 minutes a day spent in CoupleGrow, you’ll be able to understand each other better, resolve conflicts more effectively, and rediscover your passion for each other."
     },
     {
@@ -189,6 +219,8 @@
         "owner": "Life360",
         "homepage": "https://www.life360.com",
         "image-name": "couples.png",
+        "appleStore": "https://apps.apple.com/us/app/life360-stay-connected-safe/id384830320",
+        "googleStore": "https://play.google.com/store/apps/details?id=com.life360.android.safetymapd&hl=en_US",
         "description": "Have you ever wished to strengthen your relationship, while having so much fun! Whether you’re a new couple or in a long‑distance relationship, or looking to deepen your connection with a spouse or long‑term partner, Couples is here to add excitement to your relationship. Couples is the easiest way to communicate and deepen your intimacy."
     },
     {
@@ -201,6 +233,8 @@
         "owner": "DLT Partners Incorporated",
         "homepage": "https://between.us/partnership",
         "image-name": "between.webp",
+        "appleStore": "https://apps.apple.com/us/app/between-couples-love-tracker/id458035189",
+        "googleStore": "https://play.google.com/store/apps/details?id=kr.co.vcnc.android.couple&hl=en_US",
         "description": "Are you currently in a relationship? Start using Between! Between is an app for couples to communicate more lovingly and for storing precious memories easily."
     },
     {
@@ -213,6 +247,8 @@
         "owner": "SandFox",
         "homepage": "https://www.sumone.co/en",
         "image-name": "sumone.webp",
+        "appleStore": "https://apps.apple.com/us/app/sumone-for-relationships/id1469506430",
+        "googleStore": "https://play.google.com/store/apps/details?id=com.sumone&hl=en_US",
         "description": "Already 6 Million people are learning more about their partners through SumOne! Will you join us and start your own journey? Get together with the one who makes your heart flutter, create a space to raise a new friend together, and discover something about each other every day!"
     },
     {
@@ -225,6 +261,8 @@
         "owner": "Athais Incorporated",
         "homepage": "https://www.athais.com",
         "image-name": "coral.webp",
+        "appleStore": "https://apps.apple.com/us/app/coral-couples-relationship/id1448861466",
+        "googleStore": "https://play.google.com/store/apps/details?id=app.getcoral.m&hl=en_US",
         "description": "Trusted by over 1 million people. You and your lover will connect better, communicate like pros, and maybe even learn a few new tricks. Coral’s got you covered with playful conversation prompts, fun guided exercises, and expert tips. Now go on and get flirty!"
     },
     {
@@ -237,6 +275,8 @@
         "owner": "Happn SAS",
         "homepage": "https://www.happn.com",
         "image-name": "happn.png",
+        "appleStore": "https://apps.apple.com/us/app/happn-dating-app/id489185828",
+        "googleStore": "https://play.google.com/store/apps/details?id=com.ftw_and_co.happn&hl=en_US",
         "description": "Step into the world of happn, the dating app, that reinvents the way to meet people from your daily life! With over 140 million users across the globe, happn is your ultimate companion in connecting with people you meet in your usual spots. It can be any situation in your daily life, where you missed your chance at meeting your next date; at work, in your favorite café, or even out for a casual stroll."
     },
     {
@@ -249,6 +289,8 @@
         "owner": "Down App Incorporated",
         "homepage": "https://www.downapp.com",
         "image-name": "down.jpg",
+        "appleStore": "https://apps.apple.com/us/app/down-the-casual-dating-app/id601174087",
+        "googleStore": "https://play.google.com/store/apps/details?id=down.date.hookup.app&hl=en_US",
         "description": "Your search is over: this is where curiosity and honesty meet to create meaningful dates! The app serves a community of more than 16 million open‑minded singles globally. No matter what kind of relationship you’re seeking—casual or serious—you’re in control. Choose whether you’re looking to “GET DOWN” (casual hookup) or “GET DATE” (something more serious)."
     },
     {
@@ -261,6 +303,8 @@
         "owner": "Joyride GmbH",
         "homepage": "https://www.jaumo.com/en",
         "image-name": "jaumo.webp",
+        "appleStore": "https://apps.apple.com/us/app/jaumo-dating-app-flirt-chat/id522681493",
+        "googleStore": "https://play.google.com/store/apps/details?id=com.jaumo&hl=en_US",
         "description": "Jaumo is more than just a dating app — it’s a community‑driven platform designed to help you meet new people, make friends, and create real connections. With over 50 million users, Jaumo lets you explore international dating, discover people with similar interests, and engage in meaningful conversations. Whether you’re looking for serious relationships, casual meet‑ups, or just a great chat, Jaumo makes every interaction feel natural and exciting."
     },
     {
@@ -273,6 +317,8 @@
         "owner": "Hud Studio Limited",
         "homepage": "https://www.hudapp.com",
         "image-name": "hud.png",
+        "appleStore": "https://apps.apple.com/us/app/hud-casual-dating-mutual-fun/id1042814349",
+        "googleStore": "https://play.google.com/store/apps/details?id=co.hud.app&hl=en_US",
         "description": "HUD – Date the way YOU want. Embrace shame‑free casual dating, explore your desires, and meet like‑minded people near you. Join the casual dating community and meet open‑minded adult singles worldwide."
     },
     {
@@ -285,6 +331,8 @@
         "owner": "PE Digital GmbH",
         "homepage": "https://www.lovoo.com",
         "image-name": "lovoo.png",
+        "appleStore": "https://apps.apple.com/us/app/lovoo-dating-app-chat-app/id445338486",
+        "googleStore": "https://play.google.com/store/apps/details?id=net.lovoo.android&hl=en_US",
         "description": "LOVOO will… spark your curiosity. cherish what makes you unique. prioritize your needs. let you get to know people in a variety of ways. help you find friends. introduce you to genuine singles near you. simplify planning your date. focus on your safety when dating. let you discover all the facets of love. It’s not pronounced “lohfou” or “loowoo”, but “luh‑voo” — sounds almost like ‘love you’, doesn’t it?"
     },
     {
@@ -297,6 +345,8 @@
         "owner": "Wild Limited",
         "homepage": "https://justbewild.com",
         "image-name": "wild.png",
+        "appleStore": "https://apps.apple.com/us/app/wild-adult-casual-dating-app/id1080102131",
+        "googleStore": "https://play.google.com/store/apps/details?id=com.free.hookup.dating.apps.wild&hl=en_US",
         "description": "WILD – The Fast & Safe way to meet & date with real singles in New York, Los Angeles, Houston, Chicago, San Diego, Las Vegas, San Antonio, Phoenix, Philadelphia and other cities in US! Forget other dating apps, Wild is the only free dating app you’ll ever need!"
     },
     {
@@ -309,6 +359,8 @@
         "owner": "Match Group",
         "homepage": "https://www.theleague.com",
         "image-name": "theLeague.png",
+        "appleStore": "https://apps.apple.com/us/app/the-league-intelligent-dating/id893653132",
+        "googleStore": "https://play.google.com/store/apps/details?id=com.league.theleague&hl=en_US",
         "description": "Meet & Date Ambitious People. High standards? Keep them that way. The League is a selective dating app offering its members a curated ‘Batch’ of potentials each day, rather than an unlimited stream of profiles. Designed for motivated daters who would rather be single than settle, The League strongly believes that 3 quality matches are better than 100 bad ones."
     },
     {
@@ -321,6 +373,8 @@
         "owner": "ParshipMeet Group",
         "homepage": "https://www.eharmony.com",
         "image-name": "eharmony.png",
+        "appleStore": "https://apps.apple.com/us/app/eharmony-dating-real-love/id458272450",
+        "googleStore": "https://play.google.com/store/apps/details?id=com.eharmony&hl=en_US",
         "description": "Are you ready to take dating to the next level and find the relationship you’ve always wanted? eharmony, the #1 trusted dating app, has helped over 2 million couples find real love. Download and join free to find out why compatibility matters."
     },
     {
@@ -333,6 +387,8 @@
         "owner": "Dattch Limited",
         "homepage": "https://www.weareher.com",
         "image-name": "her.png",
+        "appleStore": "https://apps.apple.com/us/app/her-lesbian-queer-lgbtq-dating/id573328837",
+        "googleStore": "https://play.google.com/store/apps/details?id=com.weareher.her&hl=en_US",
         "description": "Join 15 million+ queer women, lesbian, bi, non‑binary, trans and gender‑non‑conforming folks on HER — the world’s most loved LGBTQ+ dating & community app. Your people are here."
     },
     {
@@ -345,6 +401,8 @@
         "owner": "Raya App Incorporated",
         "homepage": "https://www.rayatheapp.com",
         "image-name": "raya.png",
+        "appleStore": "https://apps.apple.com/us/app/raya/id957215308",
+        "googleStore": "",
         "description": "Our focus at Raya is to provide members with access to exciting people and opportunities around the world. We are a private community where people come to connect for dating, networking, and friendship."
     },
     {
@@ -357,6 +415,8 @@
         "owner": "Bjorn Bartels",
         "homepage": "https://www.bjoernbartels.com",
         "image-name": "myLove.png",
+        "appleStore": "https://apps.apple.com/us/app/my-love-relationship-counter/id409609608",
+        "googleStore": "",
         "description": "My Love is the ultimate love app for couples, designed to strengthen your relationship. Your anniversaries, dating calendar, love counter, relationship tracker, love tracker and dating tracker are all in one place!"
     },
     {
@@ -369,6 +429,8 @@
         "owner": "Zaffles",
         "homepage": "https://relationship-tracker-ios.web.app",
         "image-name": "relationshipTracker.png",
+        "appleStore": "https://apps.apple.com/us/app/relationship-tracker/id1621331757",
+        "googleStore": "",
         "description": "Simple, elegant design shows you how long you have been together with beautiful background images. There is also a widget to track your relationship on your home screen. Daily notifications remind you how long you have been together and remind you of an upcoming anniversary 1 week in advance and another reminder 1 day before your anniversary."
     },
     {
@@ -381,6 +443,8 @@
         "owner": "Zipo Apps Limited",
         "homepage": "https://lovecounter.pp.ua/first-start",
         "image-name": "loveCounter.png",
+        "appleStore": "https://apps.apple.com/us/app/love-counter-time-in-love/id6443608055",
+        "googleStore": "https://play.google.com/store/apps/details?id=com.dudynets.lovecounter&hl=en_US",
         "description": "Have you ever wondered exactly how long you’ve been together with your favorite person? Whether it’s been days, months, or even years, Love Counter helps you track every second of your relationship. Celebrate couple life with real‑time love tracking! Whether you're living the couple life nearby or in a long‑distance bond, this app keeps love strong. Perfect for long‑distance dates, fun couples games, and milestones."
     },
     {
@@ -393,6 +457,8 @@
         "owner": "Gain Clarity Applications",
         "homepage": "https://cozycouples.co",
         "image-name": "cozyCouples.png",
+        "appleStore": "https://apps.apple.com/us/app/cozy-couples-relationship-app/id6463766369",
+        "googleStore": "https://play.google.com/store/search?q=cozycouples&c=apps&hl=en_US",
         "description": "Cozy Couples is a space just for you and your partner, where you can relax, unwind, and enjoy each other’s company. It’s the coziest way to share your love and deepen your connection. Download Cozy Couples and invite your partner today!"
     },
     {
@@ -405,6 +471,8 @@
         "owner": "Dat Hoang",
         "homepage": "https://www.facebook.com/inlove.mobileapp",
         "image-name": "inLove.png",
+        "appleStore": "https://apps.apple.com/us/app/inlove-d-day-for-couples/id1189834496",
+        "googleStore": "",
         "description": "Love is a very special gift that God has given to man. Therefore, do not let the days of love as well as the days together, the days of memory passing wasted without bringing it gives you and your partner a special feeling."
     },
     {
@@ -417,6 +485,8 @@
         "owner": "Dat Hoang",
         "homepage": "https://www.facebook.com/inlove.mobileapp",
         "image-name": "beenTogether.webp",
+        "appleStore": "https://apps.apple.com/us/app/been-together-ad/id539392422",
+        "googleStore": "https://play.google.com/store/apps/details?id=net.milkdrops.beentogether&hl=en_US",
         "description": "This is a sweet app specially designed for couples, allowing you both to record and commemorate your love journey. Whether it's the day you first met or your yearly anniversary, this app will accompany you to celebrate and cherish every beautiful moment together!"
     },
     {
@@ -429,6 +499,8 @@
         "owner": "Organic Code Company",
         "homepage": "https://appadvice.com/app/mialove-relationship-tracker/6477882426",
         "image-name": "miaLove.jpg",
+        "appleStore": "https://apps.apple.com/us/app/mialove-relationship-tracker/id6477882426",
+        "googleStore": "",
         "description": "Looking for a simple way to keep track of all your special moments? MiaLove Relationship Tracker is here for you! See how long you’ve been together with your partner or best friend. Deepen your relationship. Connect for real. Manage any relationship: with your partner, friend, or even your pet. Start, pause, end, or add new ones whenever you want."
     },
     {
@@ -441,6 +513,8 @@
         "owner": "Evergreen Technologies",
         "homepage": "https://www.evergreenapp.co",
         "image-name": "evergreen.webp",
+        "appleStore": "https://apps.apple.com/us/app/evergreen-relationship-growth/id1573360122",
+        "googleStore": "https://play.google.com/store/apps/details?id=com.evergreenapp.evergreen&hl=en_US",
         "description": "Grow together and build a healthy, loving, and lasting relationship. Evergreen is for couples who want to connect more deeply, communicate more effectively, and improve intimacy. In just a few minutes a day, you can learn new things about your partner, laugh together, get relationship tips from experts, and find new reasons to fall in love again every day."
     },
     {
@@ -453,6 +527,8 @@
         "owner": "Loo Van Eck",
         "homepage": "https://lve.nl",
         "image-name": "loo.png",
+        "appleStore": "https://apps.apple.com/us/app/loo-van-eck/id941116077",
+        "googleStore": "https://play.google.com/store/apps/details?id=com.skindustries.loovaneck&hl=en_US",
         "description": "Hoe zat het ook alweer met de d’s en t’s? Hoe schrijf je een heldere brief of e‑mail? Hoe vertel je een boeiend verhaal? Hoe versterk je een boodschap met beeld? Hoe schrijf je een overtuigende offerte? In de Loo van Eck‑app heb je allerlei tips, weetjes en feiten over taal en communicatie binnen handbereik."
     },
     {
@@ -465,6 +541,8 @@
         "owner": "Just Imagine Incorporated",
         "homepage": "https://www.rosebud.app",
         "image-name": "rosebud.webp",
+        "appleStore": "https://apps.apple.com/us/app/rosebud-ai-journal-diary/id6451135127",
+        "googleStore": "https://play.google.com/store/apps/details?id=co.justimagine.rosebud&hl=en_US",
         "description": "Rosebud is your personal AI‑powered self‑care companion. It’s a journaling and self‑reflection tool designed to support your personal growth and emotional wellness. The diary evolves with you — learning from your entries and providing personalized prompts, feedback, and insights tailored for your growth."
     }
 ]
