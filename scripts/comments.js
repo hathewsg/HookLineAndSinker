@@ -41,7 +41,7 @@ postBtn.addEventListener('click', function() {
     if(commentText === "") return;
 
     comments.push(commentText);
-    localStorage.setItem('comments', JSON.stringify(comments));
+    localStorage.setItem(storageKey, JSON.stringify(comments));
     renderComments();
     commentInput.value = "";
 });
