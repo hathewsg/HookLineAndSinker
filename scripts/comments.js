@@ -2,7 +2,12 @@ const commentInput = document.getElementById('commentInput');
 const postBtn = document.getElementById('postBtn');
 const commentList = document.getElementById('commentList');
 
-let comments = JSON.parse(localStorage.getItem('comments')) || [];
+const params = new URLSearchParams(window.location.search);
+const appName = params.get("name");
+
+const storageKey = `comments_${appName}`;
+
+let comments = JSON.parse(localStorage.getItem(storageKey)) || [];
 
 function renderComments() {
     commentList.innerHTML = '';
