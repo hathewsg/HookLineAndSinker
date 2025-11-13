@@ -36,6 +36,12 @@
                             <p>Subscription: $${app.subscription}</p>
                             <p>Released: ${app["release-date"]}</p>
                         `;
+
+                        // Makes the containers clickable
+                        container.addEventListener("click", () => {
+                            window.location.href = `appInfo.html?name=${encodeURIComponent(app.name)}`;
+                        });
+                        container.style.cursor = "pointer";
                     }
                 })
 
@@ -50,6 +56,12 @@
                             <p>Subscription: $${app.subscription}</p>
                             <p>Released: ${app["release-date"]}</p>
                         `;
+
+                        // Makes the containers clickable
+                        container.addEventListener("click", () => {
+                            window.location.href = `appInfo.html?name=${encodeURIComponent(app.name)}`;
+                        });
+                        container.style.cursor = "pointer";
                     }
                 });
             } catch (error) {
@@ -141,27 +153,21 @@
             </div>
             <h2 style="font-family: 'Pacifico', cursive; color: #660F3B;">Fun Apps to Try</h2>
             <div id="fun-apps" class="main-app-list">
-                <button>
-                    <div id="app-container4" class="app-card">
-                        <h4>PLACEHOLDER</h4>
-                        <p>Title: lorem ipsum</p>
-                        <p>Rating: lorem ipsum</p>
-                    </div>
-                </button>
-                <button>
-                    <div id="app-container5" class="app-card">
-                        <h4>PLACEHOLDER</h4>
-                        <p>Title: lorem ipsum</p>
-                        <p>Rating: lorem ipsum</p>
-                    </div>
-                </button>
-                <button>
-                    <div id="app-container6" class="app-card">
-                        <h4>PLACEHOLDER</h4>
-                        <p>Title: lorem ipsum</p>
-                        <p>Rating: lorem ipsum</p>
-                    </div>
-                </button>
+                <div id="app-container4" class="app-card">
+                    <h4>PLACEHOLDER</h4>
+                    <p>Title: lorem ipsum</p>
+                    <p>Rating: lorem ipsum</p>
+                </div>
+                <div id="app-container5" class="app-card">
+                    <h4>PLACEHOLDER</h4>
+                    <p>Title: lorem ipsum</p>
+                    <p>Rating: lorem ipsum</p>
+                </div>
+                <div id="app-container6" class="app-card">
+                    <h4>PLACEHOLDER</h4>
+                    <p>Title: lorem ipsum</p>
+                    <p>Rating: lorem ipsum</p>
+                </div>
             </div>
         </div>
     </div>
@@ -174,13 +180,12 @@
         </div>
     </div>
     </div>
+    <script>
+        // Searching
+        function toggleSearch() {
+            const searchForm = document.getElementById('searchForm');
+            searchForm.classList.toggle('active');
+        }
+    </script>
 </body>
-
-<script>
-    function toggleSearch() {
-        const searchForm = document.getElementById('searchForm');
-        searchForm.classList.toggle('active');
-    }
-</script>
-
 </html>
