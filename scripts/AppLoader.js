@@ -20,6 +20,7 @@ export class AppLoader {
     constructor(jsonPath, containerId) {
         this.jsonPath = jsonPath;
         this.container = document.getElementById(containerId);
+        this.allApps = []; // Store all apps for filtering
     }
 
     /*
@@ -37,6 +38,7 @@ export class AppLoader {
             }
 
             const apps = await response.json();
+            this.allApps = apps; // Store for later filtering
             this.displayApps(apps);
         } catch (error) {
             console.error("Error loading data: ", error);
@@ -73,5 +75,34 @@ export class AppLoader {
 
             this.container.appendChild(div);
         })
+    }
+
+    /*
+        Filters and displays apps based on a search query.
+        Searches both the app name and description.
+
+        @param1 : query - The search term entered by the user
+
+        @return : none
+    */
+    searchApps(query) {
+        // Convert query to lowercase for case-insensitive search
+        const searchTerm = query.toLowerCase().trim();
+
+        // If search is empty, show all apps
+        if (searchTerm === "") {
+            this.displayApps(this.allApps);
+            return;
+        }
+
+        // Filter apps that match the search term in name or description
+        const filteredApps = this.allApps.filter(app => {
+            const nameMatch = app.name.toLowerCase().includes(searchTerm);
+            const descriptionMatch = app.description.toLowerCase().includes(searchTerm);
+            return nameMatch || descriptionMatch;
+        });
+
+        // Display the filtered results
+        this.displayApps(filteredApps);
     }
 }

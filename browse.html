@@ -104,6 +104,32 @@
             searchForm.classList.toggle('active');
         }
 
+        // Handle search functionality
+        document.addEventListener('DOMContentLoaded', () => {
+            const searchInput = document.querySelector('.search-input');
+            const searchButton = document.querySelector('.search-submit');
+
+        // Search when clicking "Go" button
+            searchButton.addEventListener('click', (e) => {
+                e.preventDefault();
+                const query = searchInput.value;
+                if (window.appLoader) {
+                    window.appLoader.searchApps(query);
+                }
+            });
+
+            // Also search when pressing Enter
+            searchInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    e.preventDefault();
+                    const query = searchInput.value;
+                    if (window.appLoader) {
+                        window.appLoader.searchApps(query);
+                    }
+                }
+            });
+        });
+
         // Filtering
         const filterButton = document.getElementById("filterButton");
         const filterOptions = document.getElementById("filterOptions");
