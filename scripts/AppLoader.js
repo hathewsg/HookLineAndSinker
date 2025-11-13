@@ -31,20 +31,21 @@ export class AppLoader {
         @return : none
     */
     async loadApps() {
-        try {
-            const response = await fetch(this.jsonPath);
-            if (!response.ok) {
-                throw new Error (`Failed to load ${this.jsonPath}`);
-            }
-
-            const apps = await response.json();
-            this.allApps = apps; // Store for later filtering
-            this.displayApps(apps);
-        } catch (error) {
-            console.error("Error loading data: ", error);
-            this.container.innerHTML = `<p class="error">Error: Failed to load app data.</p>`;
+    try {
+        const response = await fetch(this.jsonPath);
+        if (!response.ok) {
+            throw new Error (`Failed to load ${this.jsonPath}`);
         }
+
+        const apps = await response.json();
+        this.allApps = apps; // Store for later filtering
+        this.displayApps(apps);
+        return apps; // Add this line to return the promise
+    } catch (error) {
+        console.error("Error loading data: ", error);
+        this.container.innerHTML = `<p class="error">Error: Failed to load app data.</p>`;
     }
+}
 
     /*
         This method loops through each of the entries in the apps.json

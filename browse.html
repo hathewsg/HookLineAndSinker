@@ -97,56 +97,74 @@
         </div>
     </div>
 
-    <script>
-        // Search Bar
-        function toggleSearch() {
-            const searchForm = document.getElementById('searchForm');
-            searchForm.classList.toggle('active');
+    <script type="module">
+    // Loading the JSON file after the webpage loads
+    import { AppLoader } from './scripts/AppLoader.js';
+
+    // Wait for DOM to be fully loaded
+    document.addEventListener('DOMContentLoaded', async () => {
+        // Create an instance and load the apps
+        const loader = new AppLoader("apps.json", "app-list");
+        await loader.loadApps();
+        
+        // Check if there's a search query in the URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const searchQuery = urlParams.get('search');
+        
+        if (searchQuery) {
+            document.querySelector('.search-input').value = searchQuery;
+            loader.searchApps(searchQuery);
+            document.getElementById('searchForm').classList.add('active');
         }
 
-        // Handle search functionality
-        document.addEventListener('DOMContentLoaded', () => {
-            const searchInput = document.querySelector('.search-input');
-            const searchButton = document.querySelector('.search-submit');
+        // Set up search functionality
+        const searchInput = document.querySelector('.search-input');
+        const searchButton = document.querySelector('.search-submit');
 
-        // Search when clicking "Go" button
-            searchButton.addEventListener('click', (e) => {
-                e.preventDefault();
-                const query = searchInput.value;
-                if (window.appLoader) {
-                    window.appLoader.searchApps(query);
-                }
-            });
-
-            // Also search when pressing Enter
-            searchInput.addEventListener('keypress', (e) => {
-                if (e.key === 'Enter') {
-                    e.preventDefault();
-                    const query = searchInput.value;
-                    if (window.appLoader) {
-                        window.appLoader.searchApps(query);
-                    }
-                }
-            });
+        searchButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            const query = searchInput.value;
+            loader.searchApps(query);
         });
 
-        // Filtering
-        const filterButton = document.getElementById("filterButton");
-        const filterOptions = document.getElementById("filterOptions");
-        isOpen = false;
-
-        function openSorting() {
-            console.log("Hello world");
-            if (!isOpen) {
-                filterButton.innerHTML = "Close";
-                filterOptions.style.display = "grid";
-                isOpen = true;
-            } else {
-                filterButton.innerHTML = "Sort or Filter";
-                filterOptions.style.display = "none";
-                isOpen = false;
+        searchInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                const query = searchInput.value;
+                loader.searchApps(query);
             }
+        });
+    });
+</script>
+
+    <script>
+    // Search Bar Toggle (keep this separate)
+    function toggleSearch() {
+        const searchForm = document.getElementById('searchForm');
+        searchForm.classList.toggle('active');
+        
+        if (searchForm.classList.contains('active')) {
+            document.querySelector('.search-input').focus();
         }
-    </script>
+    }
+
+    // Filtering
+    const filterButton = document.getElementById("filterButton");
+    const filterOptions = document.getElementById("filterOptions");
+    let isOpen = false;
+
+    function openSorting() {
+        console.log("Hello world");
+        if (!isOpen) {
+            filterButton.innerHTML = "Close";
+            filterOptions.style.display = "grid";
+            isOpen = true;
+        } else {
+            filterButton.innerHTML = "Sort or Filter";
+            filterOptions.style.display = "none";
+            isOpen = false;
+        }
+    }
+</script>
 </body>
 </html>
