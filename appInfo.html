@@ -53,10 +53,10 @@
                     <h1 id="app-title">App Name</h1>
                 </div>
                 <div class="app-img" id="app-img">
-                    <!-- Appstores the app are available on will load here -->
+                    <img src="site_images/placeholder_app_img.png" alt="App Image" class="app-image" id="app-image">
                 </div>
                 <div class="sites-available" id="sites-available">
-                    <a><img src="site_images/placeholder_site_img(google).png" alt="Site Image" class="site-image"></a>
+                    <!-- Appstores the app are available on will load here -->
                 </div>
                 <div class="star-rating">
                     <h2>Rating: <strong id="star-rating">★★★★☆ (placeholder)</strong></h2>
@@ -118,6 +118,12 @@
             <a href="request.html">Contact</a>
         </div>
     </div>
+    <script>
+        function toggleSearch() {
+            const searchForm = document.getElementById('searchForm');
+            searchForm.classList.toggle('active');
+        }
+    </script>
     <script src="scripts/comments.js"></script>
     <script type="module" src="scripts/AppInfoLoader.js"></script>
 </body>
