@@ -24,8 +24,8 @@ async function loadAppInfo() {
     const priceElement = document.getElementById("price");
     const tagsElement = document.getElementById("tags");
     const sitesElement = document.getElementById("sites-available");
+    const companyElement = document.getElementById("developer-name");
     const descElement = document.getElementById("description");
-    const devElement = document.getElementById("developer-name");
 
     // Handle Missing Parameter
     if (!appName) {
@@ -57,6 +57,7 @@ async function loadAppInfo() {
         ratingElement.textContent = app.rating ? `${app.rating} ★` : "No rating available";
         priceElement.textContent = app.subscription === 0 ? "Free" : `$${app.subscription}`;
         tagsElement.textContent = app.tags ? app.tags.map(tag => `#${tag}`).join(" ") : "No tags listed.";
+        companyElement.innerHTML = `<strong>Company: </strong>${app.owner}`;
         
         if (app.appleStore != "") {
             sitesElement.innerHTML += `<a href="${app.appleStore}"><img src="site_images/appleStore.png" alt="Apple Play Store Logo" class="site-image"></a>`;
@@ -66,7 +67,6 @@ async function loadAppInfo() {
         }
         
         descElement.textContent = app.description || "No description available.";
-        devElement.innerHTML = `<strong>Developer:</strong> ${app.developer || "Unknown"}`;
         
 
     } catch (error) {
