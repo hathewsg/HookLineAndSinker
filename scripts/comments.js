@@ -5,13 +5,11 @@ const commentList = document.getElementById('commentList');
 const params = new URLSearchParams(window.location.search);
 const appName = params.get("name");
 
-const storageKey = `comments_${appName}`;
+const commentsRef = firebase.database().ref(`comments/${appName}`);
 
-let comments = JSON.parse(localStorage.getItem(storageKey)) || [];
-
-function renderComments() {
+function renderComments(comments) {
     commentList.innerHTML = '';
-    comments.forEach(text => {
+    comments.forEach(comment => {
         const commentContainer = document.createElement('div');
         commentContainer.classList.add('comment-container');
 
@@ -24,7 +22,7 @@ function renderComments() {
         commentContent.classList.add('comment-content');
 
         const commentParagraph = document.createElement('p');
-        commentParagraph.innerHTML = `<strong>Username(You):</strong> ${text}`;
+        commentParagraph.innerHTML = `<strong>Username(You):</strong> ${comment.text}`;
 
         commentContent.appendChild(commentParagraph);
         commentContainer.appendChild(profileImg);
@@ -34,16 +32,26 @@ function renderComments() {
     });
 }
 
-renderComments();
+commentsRef.on('value', function(snapshot) {
+    const comments = snapshot.val() || [];
+    renderComments(Object.values(comments));
+});
 
 postBtn.addEventListener('click', function() {
     const commentText = commentInput.value.trim();
     if(commentText === "") return;
 
-    comments.push(commentText);
-    localStorage.setItem(storageKey, JSON.stringify(comments));
-    renderComments();
-    commentInput.value = "";
+    const comment = {
+        text: commentText,
+        timestamp: Date.now(),
+        user: "Username"
+    };
+
+    commentsRef.push(comment).then(() => {
+        commentInput.value = "";
+    }).catch((error) => {
+        console.error("Error posting comment: ", error);
+    });
 });
 
 commentInput.addEventListener('keydown', function(e) {
