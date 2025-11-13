@@ -123,6 +123,41 @@
             const searchForm = document.getElementById('searchForm');
             searchForm.classList.toggle('active');
         }
+
+        // Enable search redirect from other pages
+    document.addEventListener('DOMContentLoaded', () => {
+        const searchForm = document.getElementById('searchForm');
+        if (!searchForm) return; // safety check
+
+        const searchInput = searchForm.querySelector('.search-input');
+        const searchButton = searchForm.querySelector('.search-submit');
+
+        // Helper to handle the redirect
+        function handleSearch() {
+            const query = searchInput.value.trim();
+            if (query) {
+                // Redirect to browse page with query
+                window.location.href = `browse.html?search=${encodeURIComponent(query)}`;
+            } else {
+                // Go to browse page with no filters
+                window.location.href = `browse.html`;
+            }
+        }
+
+        // When button is clicked
+        searchButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            handleSearch();
+        });
+
+        // When pressing Enter
+        searchInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                handleSearch();
+            }
+        });
+    });
     </script>
     <script src="scripts/comments.js"></script>
     <script type="module" src="scripts/AppInfoLoader.js"></script>
