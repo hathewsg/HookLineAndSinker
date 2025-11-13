@@ -1,0 +1,25 @@
+{
+  "name": "hooklineandsinker",
+  "version": "1.0.0",
+  "description": "Here is our simple README file!\r Our project entails creating a functional Meta-App that helps users search relationship-oriented apps, whether that be helping with finding, journaling, or other\r relationship related activities.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hathewsg/HookLineAndSinker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/hathewsg/HookLineAndSinker/issues"
+  },
+  "homepage": "https://github.com/hathewsg/HookLineAndSinker#readme",
+  "devDependencies": {
+    "jest": "^30.2.0",
+    "jest-environment-jsdom": "^30.2.0"
+  }
+}
