@@ -62,8 +62,8 @@ export class AppLoader {
             div.innerHTML = `
                 <h2>${app.name}</h2>
                 <img src="site_images/app_images/${app["image-name"]}" alt="logo for ${app.name}" />
-                <h4>Subscription: $${app.subscription}</h4>
-                <p>${app["release-date"]}</p>
+                <h4>Rating: ${app.rating}★</h4>
+                <p style="font-weight: bold;">${app["app-type"]}</p>
             `;
 
             // When clicked, goes to appInfo and passes the app name
