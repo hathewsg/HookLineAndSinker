@@ -48,7 +48,7 @@
 
     </div>
     <div class="main-section">
-        <div class="app-info">
+        <div class="app_info">
             <div class="left-side">
                 <div class="app-title">
                     <h1 id="app-title">App Name</h1>
@@ -91,26 +91,23 @@
                 <div class="comment-section">
                     <div class="top">
                         <h2>Comments:</h2>
-                        <button class="comment-button">
-                            Leave a Comment
-                        </button>
                     </div>
 
-                    <div class="comment-container">
-                        <img src="site_images/Default_pfp.png" alt="User Profile" class="comment-profile-icon"
-                            id="comment-profile-icon">
-                        <div class="comment-content">
-                            <p id="comment"><strong id="username">Username(placeholder):</strong> This is a placeholder
-                                comment for the app. I
-                                really enjoyed using this app because... :P</p>
-
+                    <!-- comment input area-->
+                    <div class="add-comment">
+                        <textarea id="commentInput" placeholder="comment here..."></textarea>
+                        <button id="postBtn">Post Comment</button>
+                    </div>
+                    
+                    <!-- comments will appear here-->
+                    <div id="commentList">
+                        <div class="comment-container">
+                            <img src="site_images/default_pfp.png" alt="User Profile" class="comment-profile-icon">
+                            <div class="comment-content">
+                                <p><strong>Username(placeholder):</strong> This is a placeholder comment</p>
+                            </div>
                         </div>
-
-
-
                     </div>
-
-
                 </div>
 
 
@@ -120,14 +117,17 @@
             </div>
 
         </div>
-        <div class="footer">
-            <div class="nav-links">
-                <a href="appInfo.html">Back to Top</a>
-                <a href="about.html">About</a>
-                <a href="request.html">Contact</a>
-            </div>
+    </div>
+    <div class="footer">
+        <div class="nav-links">
+            <a href="appInfo.html">Back to Top</a>
+            <a href="about.html">About</a>
+            <a href="request.html">Contact</a>
         </div>
     </div>
+
+    <script src="scripts/comments.js"></script>
+
 </body>
 
 <script>
