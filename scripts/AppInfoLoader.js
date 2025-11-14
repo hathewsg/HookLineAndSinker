@@ -22,7 +22,6 @@ async function loadAppInfo() {
     const imageElement = document.getElementById("app-image");
     const ratingElement = document.getElementById("star-rating");
     const priceElement = document.getElementById("price");
-    const tagsElement = document.getElementById("tags");
     const sitesElement = document.getElementById("sites-available");
     const companyElement = document.getElementById("developer-name");
     const descElement = document.getElementById("description");
@@ -56,7 +55,6 @@ async function loadAppInfo() {
         imageElement.alt = `Image for ${app.name}`;
         ratingElement.textContent = app.rating ? `${app.rating} ★` : "No rating available";
         priceElement.textContent = app.subscription === 0 ? "Free" : `$${app.subscription}`;
-        tagsElement.textContent = app.tags ? app.tags.map(tag => `#${tag}`).join(" ") : "No tags listed.";
         companyElement.innerHTML = `<strong>Company: </strong>${app.owner}`;
         
         if (app.appleStore != "") {

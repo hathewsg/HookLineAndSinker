@@ -48,7 +48,15 @@ export class AppLoader {
             rating: raw.rating,
             description: raw.description,
             appType: raw["app-type"],
-            imageName: raw["image-name"]
+            imageName: raw["image-name"],
+            subscription: raw.subscription,
+            users: raw.users,
+            isLGBTQ: raw["is-lgbtq"],
+            releaseDate: raw["release-date"],
+            owner: raw.owner,
+            homepage: raw.homepage,
+            appleStore: raw.appleStore,
+            googleStore: raw.googleStore
         }));
 
         this.displayApps(this.allApps);
@@ -89,6 +97,87 @@ export class AppLoader {
 
             this.container.appendChild(div);
         })
+    }
+
+    /**
+     * A switch case that only returns apps that fit the currently active filters.
+     * @param  app - Each app object
+     * @param  filters - The array of filters
+     * @returns 
+     */
+    matchesFilters(app, filters) {
+        return filters.every(f => {
+            switch (f) {
+                case "free":
+                    return app.subscription === 0;
+                case "lgbtq":
+                    return app.isLGBTQ === true;
+                case "dating":
+                    return app.appType === "Dating App";
+                case "relationship":
+                    return app.appType === "Relationship App";
+                case "star4":
+                    return app.rating >= 4;
+                
+                default:
+                    return true;
+            }
+        });
+    }
+
+    /**
+     * Similar to the filter method, but only allows for one sort option to be active at a time.
+     * @param apps - Each app object
+     * @param sortOption - The currently active sort option
+     * @returns 
+     */
+    applySort(apps, sortOption) {
+        const sorted = [...apps];
+
+        switch (sortOption) {
+            case "alpha":
+                sorted.sort((a, b) => a.name.localeCompare(b.name));
+                break;
+            case "rating":
+                sorted.sort((a, b) => b.rating - a.rating);
+                break;
+            case "users":
+                sorted.sort((a, b) => b.users - a.users);
+                break;
+        }
+
+        return sorted;
+    }
+
+
+    /**
+     * Calls display apps after getting only the filtered apps in the correctly sorted order.
+     */
+    applyFiltersAndSort() {
+        let filtered = [...this.allApps];
+
+        // Collect Filters
+        const selectedFilters = Array.from(
+            document.querySelectorAll("input[name='filter']:checked")
+        ).map(i => i.value);
+
+        // Apply Filters
+        if (selectedFilters.length > 0) {
+            filtered = filtered.filter(app => 
+                this.matchesFilters(app, selectedFilters)
+            );
+        }
+
+        // Collect sorting choice
+        const sortOption = document.querySelector("input[name='sortOption']:checked")?.value;
+
+        // Apply Sorting
+        if (sortOption) {
+            filtered = this.applySort(filtered, sortOption);
+        }
+
+        // Display processed list
+        this.displayApps(filtered);
     }
 
     /*
