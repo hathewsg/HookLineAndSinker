@@ -9,18 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <title>Browse</title>
-    <script type="module">
-        // Loading the JSON file after the webpage loads
-        import { AppLoader } from './scripts/AppLoader.js';
-
-        // Create an instance and load the apps
-        const loader = new AppLoader("apps.json", "app-list");
-        loader.loadApps();
-    </script>
 </head>
 
 <body class="background">
@@ -98,73 +88,73 @@
     </div>
 
     <script type="module">
-    // Loading the JSON file after the webpage loads
-    import { AppLoader } from './scripts/AppLoader.js';
+        // Loading the JSON file after the webpage loads
+        import { AppLoader } from './scripts/AppLoader.js';
 
-    // Wait for DOM to be fully loaded
-    document.addEventListener('DOMContentLoaded', async () => {
-        // Create an instance and load the apps
-        const loader = new AppLoader("apps.json", "app-list");
-        await loader.loadApps();
-        
-        // Check if there's a search query in the URL
-        const urlParams = new URLSearchParams(window.location.search);
-        const searchQuery = urlParams.get('search');
-        
-        if (searchQuery) {
-            document.querySelector('.search-input').value = searchQuery;
-            loader.searchApps(searchQuery);
-            document.getElementById('searchForm').classList.add('active');
-        }
+        // Wait for DOM to be fully loaded
+        document.addEventListener('DOMContentLoaded', async () => {
+            // Create an instance and load the apps
+            const loader = new AppLoader("apps.json", "app-list");
+            await loader.loadApps();
+            
+            // Check if there's a search query in the URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const searchQuery = urlParams.get('search');
+            
+            if (searchQuery) {
+                document.querySelector('.search-input').value = searchQuery;
+                loader.searchApps(searchQuery);
+                document.getElementById('searchForm').classList.add('active');
+            }
 
-        // Set up search functionality
-        const searchInput = document.querySelector('.search-input');
-        const searchButton = document.querySelector('.search-submit');
+            // Set up search functionality
+            const searchInput = document.querySelector('.search-input');
+            const searchButton = document.querySelector('.search-submit');
 
-        searchButton.addEventListener('click', (e) => {
-            e.preventDefault();
-            const query = searchInput.value;
-            loader.searchApps(query);
-        });
-
-        searchInput.addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') {
+            searchButton.addEventListener('click', (e) => {
                 e.preventDefault();
                 const query = searchInput.value;
                 loader.searchApps(query);
-            }
+            });
+
+            searchInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    e.preventDefault();
+                    const query = searchInput.value;
+                    loader.searchApps(query);
+                }
+            });
         });
-    });
-</script>
+    </script>
 
     <script>
-    // Search Bar Toggle (keep this separate)
-    function toggleSearch() {
-        const searchForm = document.getElementById('searchForm');
-        searchForm.classList.toggle('active');
-        
-        if (searchForm.classList.contains('active')) {
-            document.querySelector('.search-input').focus();
+        // Search Bar Toggle (keep this separate)
+        function toggleSearch() {
+            const searchForm = document.getElementById('searchForm');
+            searchForm.classList.toggle('active');
+            
+            if (searchForm.classList.contains('active')) {
+                document.querySelector('.search-input').focus();
+            }
         }
-    }
 
-    // Filtering
-    const filterButton = document.getElementById("filterButton");
-    const filterOptions = document.getElementById("filterOptions");
-    let isOpen = false;
+        // Filtering
+        const filterButton = document.getElementById("filterButton");
+        const filterOptions = document.getElementById("filterOptions");
+        let isOpen = false;
 
-    function openSorting() {
-        console.log("Hello world");
-        if (!isOpen) {
-            filterButton.innerHTML = "Close";
-            filterOptions.style.display = "grid";
-            isOpen = true;
-        } else {
-            filterButton.innerHTML = "Sort or Filter";
-            filterOptions.style.display = "none";
-            isOpen = false;
+        function openSorting() {
+            console.log("Hello world");
+            if (!isOpen) {
+                filterButton.innerHTML = "Close";
+                filterOptions.style.display = "grid";
+                isOpen = true;
+            } else {
+                filterButton.innerHTML = "Sort or Filter";
+                filterOptions.style.display = "none";
+                isOpen = false;
+            }
         }
-    }
-</script>
+    </script>
 </body>
 </html>

@@ -6,6 +6,9 @@
         A class that loads apps from the "apps.json" storage file into the webpage.
 */
 
+// Imports
+import { App } from "./App.js";
+
 export class AppLoader {
 
     /*
@@ -20,7 +23,7 @@ export class AppLoader {
     constructor(jsonPath, containerId) {
         this.jsonPath = jsonPath;
         this.container = document.getElementById(containerId);
-        this.allApps = []; // Store all apps for filtering
+        this.allApps = []; // Store all app objects (NOT RAW JSON)
     }
 
     /*
@@ -37,10 +40,20 @@ export class AppLoader {
             throw new Error (`Failed to load ${this.jsonPath}`);
         }
 
-        const apps = await response.json();
-        this.allApps = apps; // Store for later filtering
-        this.displayApps(apps);
-        return apps; // Add this line to return the promise
+        const appsData = await response.json();
+
+        // Convert plain JSON objects to App Instances
+        this.allApps = appsData.map(raw => new App({
+            name: raw.name,
+            rating: raw.rating,
+            description: raw.description,
+            appType: raw["app-type"],
+            imageName: raw["image-name"]
+        }));
+
+        this.displayApps(this.allApps);
+        return this.allApps; // Add this line to return the promise
+
     } catch (error) {
         console.error("Error loading data: ", error);
         this.container.innerHTML = `<p class="error">Error: Failed to load app data.</p>`;
@@ -55,18 +68,18 @@ export class AppLoader {
 
         @return : none
     */
-    displayApps(apps) {
+    displayApps(appList) {
         // Clear any previous content first
         this.container.innerHTML = "";
 
-        apps.forEach(app => {
+        appList.forEach(app => {
             const div = document.createElement("div");
             div.className = "app-card";
             div.innerHTML = `
                 <h2>${app.name}</h2>
-                <img src="site_images/app_images/${app["image-name"]}" alt="logo for ${app.name}" />
+                <img src="site_images/app_images/${app.imageName}" alt="${app.name}" />
                 <h4>Rating: ${app.rating}★</h4>
-                <p style="font-weight: bold;">${app["app-type"]}</p>
+                <p style="font-weight: bold;">${app.appType}</p>
             `;
 
             // When clicked, goes to appInfo and passes the app name
@@ -88,22 +101,18 @@ export class AppLoader {
     */
     searchApps(query) {
         // Convert query to lowercase for case-insensitive search
-        const searchTerm = query.toLowerCase().trim();
+        const search = query.toLowerCase().trim();
 
         // If search is empty, show all apps
-        if (searchTerm === "") {
+        if (search === "") {
             this.displayApps(this.allApps);
             return;
         }
 
         // Filter apps that match the search term in name or description
-        const filteredApps = this.allApps.filter(app => {
-            const nameMatch = app.name.toLowerCase().includes(searchTerm);
-            const descriptionMatch = app.description.toLowerCase().includes(searchTerm);
-            return nameMatch || descriptionMatch;
-        });
+        const filtered = this.allApps.filter(app => app.matchesSearch(search));
 
-        // Display the filtered results
-        this.displayApps(filteredApps);
+        // Display Filtered Results
+        this.displayApps(filtered);
     }
 }
