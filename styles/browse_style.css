@@ -24,6 +24,12 @@
     border-radius: 8px;
     height: 250px;
 }
+.app-card:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: 0.3s ease;
+    
+}
 
 .app-card img{
     max-width:100px;

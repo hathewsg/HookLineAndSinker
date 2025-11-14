@@ -22,8 +22,11 @@ async function loadAppInfo() {
     const imageElement = document.getElementById("app-image");
     const ratingElement = document.getElementById("star-rating");
     const priceElement = document.getElementById("price");
+    const userElement = document.getElementById("users");
     const sitesElement = document.getElementById("sites-available");
     const companyElement = document.getElementById("developer-name");
+    const appTypeElement = document.getElementById("app-type");
+    const releaseElement = document.getElementById("release");
     const descElement = document.getElementById("description");
 
     // Handle Missing Parameter
@@ -50,12 +53,15 @@ async function loadAppInfo() {
         }
 
         // Filling in the page elements
-        titleElement.textContent = app.name;
+        titleElement.innerHTML = `<a href="${app.homepage}">${app.name}</a>`;
         imageElement.src = `site_images/app_images/${app["image-name"]}`;
         imageElement.alt = `Image for ${app.name}`;
         ratingElement.textContent = app.rating ? `${app.rating} ★` : "No rating available";
         priceElement.textContent = app.subscription === 0 ? "Free" : `$${app.subscription}`;
+        userElement.innerHTML = `User Count: ${app.users}`;
         companyElement.innerHTML = `<strong>Company: </strong>${app.owner}`;
+        releaseElement.innerHTML = `<strong>Release Date: </strong>${app["release-date"]}`
+        appTypeElement.innerHTML = `<strong>App Type: </strong>${app["app-type"]}`;
         
         if (app.appleStore != "") {
             sitesElement.innerHTML += `<a href="${app.appleStore}"><img src="site_images/appleStore.png" alt="Apple Play Store Logo" class="site-image"></a>`;

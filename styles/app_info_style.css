@@ -54,6 +54,11 @@
     max-height: 50px;
     padding: 10px;
 }
+.site-image:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: 0.3s ease;
+}
 
 .tags {
     border: #E18A8A 2px solid;
