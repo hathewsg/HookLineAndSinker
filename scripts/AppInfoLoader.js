@@ -80,4 +80,8 @@ async function loadAppInfo() {
     }
 }
 
-loadAppInfo();
+if (typeof windo !== "undefined" && typeof document !== "undefined") {
+    loadAppInfo();
+}
+
+export { loadAppInfo };
