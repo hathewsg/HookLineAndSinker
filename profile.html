@@ -15,6 +15,31 @@
     <title>Profile</title>
 </head>
 
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const user = localStorage.getItem("loggedInUser");
+        if (!user) {
+            // Not logged in → redirect to signup
+            window.location.href = "login.html";
+        } else {
+            // Optionally: personalize the page
+            const welcome = document.getElementById("username");
+            if (welcome) welcome.textContent = `${user}`;
+        }
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const logoutBtn = document.getElementById("logout-button");
+
+        if (logoutBtn) {
+            logoutBtn.addEventListener("click", () => {
+                localStorage.removeItem("loggedInUser");
+                window.location.href = "login.html"; // redirect after logout
+            });
+        }
+    });
+</script>
+
 <body class="background">
     <div class="whole-page">
         <div class="header">
@@ -53,7 +78,7 @@
                         <button class="edit-profile-img" id="edit-profile-img">Edit Profile Image</button>
                     </div>
                     <p class="username">Username:
-                    <p id="username">User123abc</p>
+                    <p id="username-display">User123abc</p>
                     </p>
                     <p class="email">Email:
                     <p id="email">abc123@placeholder.com</p>
@@ -64,25 +89,20 @@
                         <li><a>App 2</a></li>
                         <li><a>App 3</a></li>
                         <button class="edit-profile-info" id="edit-profile-info">Edit Profile Info</button>
+                </div>
+                <div class="other-stuff">
+                    <div class="extra-prof-stuff">
+                        <p>You can now comment!</p>
+                        <a href="testStorage.html" class="extra-buttons" id="go-to-browse">Go to Browse Page</a>
+
                     </div>
-                    <div class="other-stuff">
-                        <div class="extra-prof-stuff">
-                            <p>You can now comment!</p>
-                            <a href="testStorage.html" class="extra-buttons" id="go-to-browse">Go to Browse Page</a>
+                    <div class="extra-prof-stuff">
+                        <button id="logout-button" class="logout-btn">Log Out</button>
 
-                        </div>
-                        <div class="extra-prof-stuff">
-                            <p>Lorem Ipsum!</p>
-                            <a class="extra-buttons" id="PLACEHOLDER">PLACEHOLDER</a>
-
-                        </div>
-                        <div class="extra-prof-stuff">
-                            <p>Lorem Ipsum!</p>
-                            <a class="extra-buttons" id="PLACEHOLDER">PLACEHOLDER</a>
-
-                        </div>
-                        
                     </div>
+
+
+                </div>
 
             </div>
 

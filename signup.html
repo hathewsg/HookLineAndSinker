@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/login_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Index</title>
+
+</head>
+
+<body class="background">
+    <div class="whole-page">
+        <div class="header">
+            <a href="index.html">
+                <img src="site_images/logo_v2.png" alt="Logo" class="logo">
+            </a>
+            <!-- This is a comment
+
+            <div class="nav-links">
+                <div class="left">
+                    <a href="index.html">Home</a>
+                    <a href="browse.html">Browse</a>
+                    <a href="about.html">About</a>
+                    <a href="request.html">Contact</a>
+                    <button onclick="toggleSearch()">
+                        <a><img src="site_images/magniglass.png" alt="magnifying glass" class="search-icon"></a>
+                    </button>
+                    <div id="searchForm" class="search-container">
+                        <input type="text" placeholder="Search..." class="search-input">
+                        <button type="submit" class="search-submit">Go</button>
+                    </div>
+                </div>
+                <div class="right">
+                    <a href="profile.html">
+                        <img src="site_images/Default_pfp.png" alt="Profile" class="profile-icon">
+                    </a>
+                </div>
+            </div>
+
+            -->
+        </div>
+    </div>
+    <div class="main-section">
+        <div class="login-container">
+            <h2>Create an Account</h2>
+            <div class="form-container">
+                <form id="signupForm" method="POST" class="signup-form">
+                    <div class="info-input">
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+
+                        <button type="submit" class="login-button">Sign Up</button>
+
+                    </div>
+                </form>
+                <p style="align-self: center;" class="login-link">Already have an account? <a style="color: #660F3B"
+                    href="login.html"><strong>Log in here</strong></a></p>
+                    <strong style="align-self: center; color: #666666;"><a href="index.html">Browse site as guest</a></strong>
+            </div>
+
+            <p id="result"></p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="nav-links">
+            <!-- This is a comment 
+
+            <a href="index.html">Back to Top</a>
+            <a href="about.html">About</a>
+            <a href="request.html">Contact</a>
+
+            -->
+        </div>
+    </div>
+    </div>
+    <script>
+        const API_BASE = "https://hlas-backend.onrender.com";
+
+        document.getElementById("signupForm").addEventListener("submit", async function (e) {
+            e.preventDefault();
+
+            // Collect form data
+            const data = new URLSearchParams(new FormData(e.target));
+
+            // Send data to backend
+            const response = await fetch(`${API_BASE}/register`, {
+                method: "POST",
+                body: data,
+            });
+
+            // Display server response
+            const text = await response.text();
+            document.getElementById("result").textContent = text;
+        });
+
+    </script>
+</body>
+
+</html>
