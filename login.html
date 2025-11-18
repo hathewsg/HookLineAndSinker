@@ -73,7 +73,7 @@
             <p style="align-self: center;" class="signup-link">Don't have an account? <a style="color: #660F3B"
                     href="signup.html"><strong>Sign up here</strong></a></p>
 
-                    <strong style="align-self: center; color: #666666;"><a href="index.html">Browse site as guest</a></strong>
+            <strong style="align-self: center; color: #666666;"><a href="index.html">Browse site as guest</a></strong>
         </div>
 
     </div>
@@ -92,17 +92,25 @@
     </div>
     <script>
         const API = "https://hlas-backend.onrender.com";
+
         document.getElementById("loginForm").onsubmit = async (e) => {
             e.preventDefault();
+
             const formData = new URLSearchParams(new FormData(e.target));
-            const res = await fetch(`${API}/login`, { method: "POST", body: formData });
-            //alert(await res.text());
+
+            const res = await fetch(`${API}/login`, {
+                method: "POST",
+                body: formData,
+                credentials: "include"   // <-- REQUIRED: sends + receives cookies
+            });
+
             const text = await res.text();
 
             if (text === "logged in") {
+                // You can keep this, though your backend doesn't use it anymore
                 localStorage.setItem("loggedInUser", formData.get("email"));
+
                 alert("Logged in successfully!");
-                // Redirect to home page
                 window.location.href = "index.html";
             } else if (text === "invalid") {
                 alert("Email or password not found. Please try again.");
