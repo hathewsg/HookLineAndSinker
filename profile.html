@@ -20,7 +20,7 @@
         const user = localStorage.getItem("loggedInUser");
         if (!user) {
             // Not logged in → redirect to signup
-            window.location.href = "login.html";
+           // window.location.href = "login.html";
         } else {
             // Optionally: personalize the page
             const welcome = document.getElementById("username");
@@ -83,12 +83,10 @@
                     <p class="email">Email:
                     <p id="email">abc123@placeholder.com</p>
                     </p>
-                    <p class="favorited-apps">Favorited Apps:</p>
-                    <ul id="favorited-apps">
-                        <li><a>App 1</a></li>
-                        <li><a>App 2</a></li>
-                        <li><a>App 3</a></li>
-                        <button class="edit-profile-info" id="edit-profile-info">Edit Profile Info</button>
+                    <p><strong>Access Level:</strong> <span id="access-level">Loading...</span></p>
+                    <button class="edit-profile-info" id="edit-profile-info">Edit Profile Info</button>
+
+                    <button class="edit-profile-info" id="edit-profile-info">Edit Profile Info</button>
                 </div>
                 <div class="other-stuff">
                     <div class="extra-prof-stuff">
