@@ -19,7 +19,7 @@
     document.addEventListener("DOMContentLoaded", async () => {
         try {
             // Ask backend who is logged in
-            const response = await fetch("https://hlas-backend.onrender.com", {
+            const response = await fetch("https://hlas-backend.onrender.com/me", {
                 credentials: "include" // IMPORTANT: sends cookies
             });
 
