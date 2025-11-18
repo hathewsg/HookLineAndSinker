@@ -54,12 +54,17 @@
         const logoutBtn = document.getElementById("logout-button");
 
         if (logoutBtn) {
-            logoutBtn.addEventListener("click", () => {
-                // Remove local data
+            logoutBtn.addEventListener("click", async () => {
+                // Remove localStorage user (not actually used anymore)
                 localStorage.removeItem("loggedInUser");
 
-                // Also remove cookie by redirecting to server logout endpoint
-                // (We will add /logout on backend if needed)
+                // Tell backend to clear the cookie
+                await fetch("https://hlas-backend.onrender.com/logout", {
+                    method: "POST",
+                    credentials: "include"
+                });
+
+                // Redirect
                 window.location.href = "login.html";
             });
         }
