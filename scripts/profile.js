@@ -44,7 +44,9 @@ document.getElementById("edit-profile-info").addEventListener("click", async () 
         body: JSON.stringify({ displayName: newName })
     });
 
-    location.reload();
+    document.getElementById("username-display").textContent = newName;
+    document.getElementById("username").textContent = newName;
+
 });
 
 // ----------------------
@@ -70,7 +72,7 @@ document.getElementById("edit-profile-img").addEventListener("click", () => {
                 body: JSON.stringify({ image: base64 })
             });
 
-            location.reload();
+            document.getElementById("profile-picture").src = base64;
         };
 
         reader.readAsDataURL(file);
