@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         document.getElementById("access-level").textContent =
             (data.role || "user").toUpperCase();
 
-            loadProfile(data.email);
+        loadProfile(data.email);
 
     } catch (err) {
         console.error("Error:", err);
@@ -42,6 +42,11 @@ function loadProfile(email) {
         // Profile picture
         const pfp = val.profilePicture || "site_images/Default_pfp.png";
         document.getElementById("profile-picture").src = pfp;
+
+        // Update nav bar profile picture
+        const navPic = document.getElementById("nav-profile-pic");
+        if (navPic) navPic.src = currentProfilePicture;
+
     });
 }
 

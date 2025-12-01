@@ -5,6 +5,7 @@ const commentList = document.getElementById('commentList');
 let currentUserEmail = null;
 let currentDisplayName = "Unknown User";
 let currentProfilePicture = "site_images/Default_pfp.png";
+let currentUserRole = "user";
 
 const params = new URLSearchParams(window.location.search);
 const appName = params.get("name");
@@ -20,6 +21,8 @@ fetch("https://hlas-backend.onrender.com/me", { credentials: "include" })
         currentUserEmail = data.email;
 
         const safe = currentUserEmail.replace(/\./g, "_");
+
+        currentUserRole = data.role || "user";
 
         // Load Firebase user profile (displayName + profilePicture)
         return db.ref("users/" + safe).once("value");
@@ -52,19 +55,39 @@ function renderComments(comments) {
         // Comment text
         const commentParagraph = document.createElement('p');
         commentParagraph.innerHTML = `<strong>${comment.user}:</strong> ${comment.text}`;
-
+       
         commentContent.appendChild(commentParagraph);
+
+        // DELETE BUTTON — only mods/admins
+        if (currentUserRole === "moderator" || currentUserRole === "admin") {
+            const delBtn = document.createElement("button");
+            delBtn.textContent = "Delete";
+            delBtn.classList.add("delete-comment-btn");
+
+            delBtn.addEventListener("click", () => {
+                if (confirm("Delete this comment?")) {
+                    commentsRef.child(comment.id).remove();
+                }
+            });
+
+            commentContent.appendChild(delBtn);
+        }
+
         commentContainer.appendChild(profileImg);
         commentContainer.appendChild(commentContent);
-
         commentList.appendChild(commentContainer);
     });
 }
 
 // Listen for changes
 commentsRef.on('value', function (snapshot) {
-    const comments = snapshot.val() || [];
-    renderComments(Object.values(comments));
+    const commentsObj = snapshot.val() || {};
+    // convert to array WITH Firebase keys
+    const comments = Object.keys(commentsObj).map(key => ({
+        id: key,          // Firebase comment ID
+        ...commentsObj[key]
+    }));
+    renderComments(comments);
 });
 
 postBtn.addEventListener('click', function () {

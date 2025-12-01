@@ -122,6 +122,21 @@
     margin-top: 15px;
 }
 
+.delete-comment-btn {
+    background-color: #ff4b4b;
+    border: none;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.delete-comment-btn:hover {
+    background-color: #d60000;
+}
+
+
 .footer {
     margin-top: auto;
     max-width: 100%;
