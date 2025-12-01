@@ -123,3 +123,18 @@
     border-bottom: #E18A8A 2px dotted;
 
 }
+
+/* Responsive Design for profiles */
+@media screen and (max-width: 768px) {
+    .profile-info h2 {
+        text-align: center;
+    }
+    .edit-profile-info {
+        margin-left: 0;
+    }
+
+    .profile-info {
+        display: flex;
+        flex-direction: column;
+    }
+}
