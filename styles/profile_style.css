@@ -132,4 +132,9 @@
     .edit-profile-info {
         margin-left: 0;
     }
+
+    .profile-info {
+        display: flex;
+        flex-direction: column;
+    }
 }
