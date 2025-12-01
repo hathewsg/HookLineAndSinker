@@ -15,20 +15,12 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         currentUserEmail = data.email;
 
-        //document.getElementById("username").textContent = data.email;
         document.getElementById("email").textContent = data.email;
-
-        //document.getElementById("username-display").textContent =
-           //data.displayName || data.email.split("@")[0];
 
         document.getElementById("access-level").textContent =
             (data.role || "user").toUpperCase();
 
             loadProfile(data.email);
-
-        //if (data.profilePicture) {
-            //document.getElementById("profile-picture").src = data.profilePicture;
-        //}
 
     } catch (err) {
         console.error("Error:", err);
@@ -75,7 +67,7 @@ document.getElementById("edit-profile-info").addEventListener("click", async () 
         console.log("Display name updated successfully!");
     }).catch(error => {
         console.error("Error updating display name:", error);
-        alert("Failed to update display name. Check console for details."); // Or a more user-friendly message
+        alert("Failed to update display name. Check console for details.");
     });
 
     document.getElementById("username-display").textContent = newName;
