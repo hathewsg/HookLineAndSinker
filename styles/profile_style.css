@@ -52,11 +52,11 @@
     color: #ffffff;
     width: 200px;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 10px;
     border-radius: 25px;
     cursor: pointer;
     margin-top: 30px;
-    margin-left: 100px;
+    /*margin-left: 100px;*/
     align-self: center;
 }
 
