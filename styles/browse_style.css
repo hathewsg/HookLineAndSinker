@@ -75,3 +75,21 @@
 .filterFields h4, .sortingFields h4 {
     grid-column: 1 / -1;
 }
+
+/* Responsive Design for app cards */
+@media screen and (max-width: 768px) {
+    .app-list {
+        grid-template-columns: 1fr;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .filtering {
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-bottom: 2em;
+    }
+    .filterOptions {
+        display: none;
+        grid-template-columns: 1fr;
+    }
+}

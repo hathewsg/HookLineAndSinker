@@ -40,12 +40,6 @@ button {
 
 
 .background {
-    /* background-image: url('site_images/main_bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
-    height: 100rem; */
     background: linear-gradient(to top right, #CBEFB6, #FCDDDF, #E18A8A);
     min-height: 100vh;
 }
@@ -486,4 +480,63 @@ button {
 
 .comment-content strong {
     color: #660F3B;
+}
+
+/* Responsive design for header */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+    .nav-links {
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+
+/* Responsive design for footer */
+@media screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+}
+
+/* Responsive design for index.html */
+@media screen and (max-width: 768px) {
+    /* Top Row Responsive */
+    .top-row {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        align-self: center;
+    }
+    .app-rows h2{
+        text-align: center;
+    }
+    .main-app-list {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 0.5em;
+    }
+    .main-app-list {
+        margin: 0;
+    }
+}
+
+/* Responsive design for request.html */
+@media screen and (max-width: 768px) {
+    .request-form {
+        width: 90%;
+        padding: 10px;
+    }
+    .request-form textarea {
+        width: 100%;
+    }
+    .main-section {
+        min-height: auto;
+    }
 }
