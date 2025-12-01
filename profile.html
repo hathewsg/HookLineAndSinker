@@ -13,6 +13,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <title>Profile</title>
+
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyBAVYqd4OKNVgWCtRbtLCHTw8DcqE22jBk",
+            authDomain: "hooklineandsinker-be8aa.firebaseapp.com",
+            databaseURL: "https://hooklineandsinker-be8aa-default-rtdb.firebaseio.com",
+            projectId: "hooklineandsinker-be8aa",
+            storageBucket: "hooklineandsinker-be8aa.firebasestorage.app",
+            messagingSenderId: "403793372999",
+            appId: "1:403793372999:web:97190bead00da9d6760e62"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+
+        const db = firebase.database();
+    </script>
+
 </head>
 
 <body class="background">
