@@ -34,6 +34,11 @@ fetch("https://hlas-backend.onrender.com/me", { credentials: "include" })
     })
     .catch(err => {
         console.error("User not logged in:", err);
+
+        // Disable comment box & button
+        postBtn.disabled = true;
+        commentInput.disabled = true;
+        commentInput.placeholder = "You must be logged in to comment.";
     });
 
 
@@ -55,7 +60,7 @@ function renderComments(comments) {
         // Comment text
         const commentParagraph = document.createElement('p');
         commentParagraph.innerHTML = `<strong>${comment.user}:</strong> ${comment.text}`;
-       
+
         commentContent.appendChild(commentParagraph);
 
         // DELETE BUTTON — only mods/admins
@@ -91,6 +96,11 @@ commentsRef.on('value', function (snapshot) {
 });
 
 postBtn.addEventListener('click', function () {
+    if (!currentUserEmail) {
+        alert("You must be logged in to post a comment.");
+        return;
+    }
+
     const commentText = commentInput.value.trim();
     if (commentText === "") return;
 
