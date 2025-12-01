@@ -62,6 +62,27 @@ document.getElementById("edit-profile-info").addEventListener("click", async () 
         displayName: newName
     });
 
+    // For updating display name
+    db.ref("users/" + safe).update({
+        displayName: newName
+    }).then(() => {
+        console.log("Display name updated successfully!");
+    }).catch(error => {
+        console.error("Error updating display name:", error);
+        alert("Failed to update display name. Check console for details."); // Or a more user-friendly message
+    });
+
+    // For updating profile picture
+    // db.ref("users/" + safe).update({
+    //     profilePicture: base64
+    // }).then(() => {
+    //     console.log("Profile picture updated successfully!");
+    // }).catch(error => {
+    //     console.error("Error updating profile picture:", error);
+    //     alert("Failed to update profile picture. Check console for details.");
+    // });
+
+
     document.getElementById("username-display").textContent = newName;
     document.getElementById("username").textContent = newName;
 });
@@ -106,7 +127,13 @@ document.getElementById("edit-profile-img").addEventListener("click", () => {
             // Save Base64 to Firebase
             db.ref("users/" + safe).update({
                 profilePicture: base64
+            }).then(() => {
+                console.log("Profile picture updated successfully!");
+            }).catch(error => {
+                console.error("Error updating profile picture:", error);
+                alert("Failed to update profile picture. Check console for details.");
             });
+
 
             // Update instantly
             document.getElementById("profile-picture").src = base64;
