@@ -49,3 +49,12 @@
     color: white;
     transform: scale(1.05);
 }
+
+/* Responsive design for login */
+@media screen and (max-width: 768px) {
+    .login-container {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+    }
+}

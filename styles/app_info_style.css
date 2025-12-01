@@ -141,3 +141,28 @@
     margin-top: auto;
     max-width: 100%;
 }
+
+/* Responsive design for app info section */
+@media screen and (max-width: 768px) {
+    .app-info {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        margin: 20px;
+    }
+    .left-side, .right-side {
+        margin: 0;
+        width: 100%;
+    }
+    .left-side {
+        text-align: center;
+    }
+    .sites-available {
+        justify-content: center;
+    }
+    
+    .add-comment button {
+        align-self: center;
+    }
+    
+}
